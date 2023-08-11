@@ -127,6 +127,12 @@ export const typography = {
         textTransform: "uppercase",
         letterSpacing: 1,
         fontSize: 12
+    },
+    header10: {
+        fontFamily: "Montserrat-Regular",
+        fontWeight: 400,
+        letterSpacing: 1,
+        fontSize: 25
     }
 };
 
