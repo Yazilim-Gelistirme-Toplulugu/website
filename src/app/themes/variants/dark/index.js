@@ -6,6 +6,7 @@ export const colors = {
     "layer2":           "#1F1F1F",
     "layer3":           "#292929",
     "panel":            "#1F1F1F",
+    "orange":           "#EF4126",
     "warning":          "#EBD147",
     "danger":           "#EB7E47",
     "success":          "#7EEB47",
