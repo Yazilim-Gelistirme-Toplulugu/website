@@ -1,3 +1,4 @@
+//import "../../../../src/fonts/style.css"
 export const colors = {
     "primary":          "#00C2A0",
     "body":             "#f5f5f5",
@@ -34,6 +35,13 @@ export const colors = {
 };
 
 export const typography = {
+    link:{
+        fontFamily: "Quicksand",
+        fontSize: "30px",
+        fontStyle: "normal",
+        fontWeight: "600",
+        lineHeight: "normal"
+    },
     header1: {
         fontFamily: "Montserrat-Light",
         fontWeight: 300,

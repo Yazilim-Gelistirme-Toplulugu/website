@@ -1,44 +1,57 @@
 import React from 'react';
+import { Button, Text } from 'ncore-web';
+import logo from "../../../../src/assets/image/components/logo.png"
+import useStyles from './style';
 
 const Navbar = () => {
-    return <div>
+    const classes = useStyles();
+    return <div
+        className={classes.navbar}
+    >
         <div>
+            <img src={logo} alt="" />
+        </div>
+        <div
+            className={classes.sectionLinks}
+        >
+            <Button
+                className={classes.buttonLink}
+                title="Anasayfa"
+                variant="ghost"
+            />
+            <Button
+                title="Hakkımızda"
+                variant="ghost"
+            />
+            <Button
+                title="Ekibimiz"
+                variant="ghost"
+            />
+            <Button
+                title="Çalışma Alanlarımız"
+                variant="ghost"
+            />
+            <Button
+                title="Galeri"
+                variant="ghost"
+            />
         </div>
 
 
         <div
-            className={classes.menuList}
-            style={{
-                gap: spaces.inline * 2
-            }}
+            className={classes.buttons}
         >
-            <Text variant="header7">
-                Anasayfa
-            </Text>
-            <Text variant="header7">
-                Hakkımızda
-            </Text>
-            <Text variant="header7">
-                Ekibimiz
-            </Text>
-            <Text variant="header7">
-                Çalışma Alanlarımız
-            </Text>
-            <Text variant="header7">
-                Galeri
-            </Text>
-        </div>
-
-
-        <div>
             <Button
                 title="İletişim"
                 variant="outline"
             />
             <Button
+                className={classes.button}
                 title="Bize Katılın"
             />
         </div>
     </div>
 }
 export default Navbar;
+
+
