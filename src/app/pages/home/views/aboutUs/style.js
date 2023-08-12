@@ -2,20 +2,18 @@ import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
     main: {
+        width: "100%",
         display: "flex",
         flexDirection: "row",
-
+        justifyContent: "space-between",
     },
-    
+
     textContent: {
-        display: "flex",
-        flexDirection: "column",
-        padding: "64px 104px",
         justifyContent: "center",
         alignItems: "center",
-        gap: "40px",
-        flex: "1 0 0",
+        textAlign: "center",
         boxShadow: "-12px 0px 12px 0px rgba(0, 0, 0, 0.25)",
+        height:"80vh"
     },
 
     whoAreWeSection: {
@@ -30,8 +28,25 @@ const useStyles = createUseStyles({
     joinUsSection: {
         background: "#094F82",
     },
-    active:{
-        width: "52%",
+    active: {
+        //  position:"absolute",
+        //  height: "100vh",
+        width: "40%",
+        padding: "64px 104px",
+        display: "flex",
+        flexDirection: "column",
+        gap: "40px",
+       //display: "-webkit-flex",
+        //   display: "flex",
+    },
+    passive: {
+        //   position:"absolute",
+        transform: "rotate(90deg)",
+           height:"36vh",
+           overflow: "hidden",
+        //     width:"100vh",
+        width: "20%",
+        //  overflow: "hidden"
     },
 })
 export default useStyles;
