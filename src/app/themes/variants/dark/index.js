@@ -1,6 +1,6 @@
 //import "../../../../src/fonts/style.css"
 export const colors = {
-    "primary":          "#00C2A0",
+    "primary":          "#EF4126",
     "body":             "#f5f5f5",
     "constrastBody":    "#2a2a2a",
     "layer1":           "#141414",

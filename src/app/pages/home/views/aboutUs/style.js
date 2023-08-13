@@ -31,7 +31,7 @@ const useStyles = createUseStyles({
     active: {
         //  position:"absolute",
         //  height: "100vh",
-        width: "40%",
+        width: "46%",
         padding: "64px 104px",
         display: "flex",
         flexDirection: "column",
@@ -42,10 +42,10 @@ const useStyles = createUseStyles({
     passive: {
         //   position:"absolute",
         transform: "rotate(90deg)",
-           height:"36vh",
+           height:"32vh",
            overflow: "hidden",
         //     width:"100vh",
-        width: "20%",
+        width: "18%",
         //  overflow: "hidden"
     },
 })

@@ -1,8 +1,12 @@
+
 import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
     navbar: {
-        width: "100%",
+        zIndex: 1,
+        left: 0,
+        right: 0,
+        top: 0,
         display: "flex",
         flexDirection: "row",
         padding: "24px 56px",
@@ -11,7 +15,8 @@ const useStyles = createUseStyles({
         alignItems: "center",
         background: "rgba(0, 0, 0, 0.30)",
         boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
-        backdropFilter: "blur(5px)"
+        backdropFilter: "blur(5px)",
+        gap: 40,
     },
 
     sectionLinks: {
@@ -19,17 +24,16 @@ const useStyles = createUseStyles({
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        gap: "16px",
         userSelect: "none"
     },
 
     buttonLink: {
-        padding: "0px",
-        margin: "0px"
+        borderRadius: "50px !important",
+        padding: "0px !important",
+        margin: "0px !important",
     },
 
     button: {
-        borderRadius: "200px",
         background: "linear-gradient(149deg, #FF563A 0%, #E9391E 100%)"
     },
 
@@ -37,7 +41,6 @@ const useStyles = createUseStyles({
         display: "flex",
         flexDirection: "row",
         alignItems: "center",
-        gap: "16px",
     }
 })
 export default useStyles;

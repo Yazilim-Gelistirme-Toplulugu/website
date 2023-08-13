@@ -33,7 +33,7 @@ const TeamsSection = () => {
         </div>
 
         <div
-            className={`${classes.textContent} ${classes.whatDoWeDoSection}`}
+            className={`${classes.textContent} ${classes.whatDoWeDoSection} ${classes.passive}`}
         >
             <Text
                 variant="header1"
@@ -56,7 +56,7 @@ const TeamsSection = () => {
         </div>
 
         <div
-            className={`${classes.textContent} ${classes.whyUsSeciton}`}
+            className={`${classes.textContent} ${classes.whyUsSeciton} ${classes.passive}`}
         >
             <Text
                 variant="header1"
@@ -78,7 +78,7 @@ const TeamsSection = () => {
         </div>
 
         <div
-            className={`${classes.textContent} ${classes.joinUsSection}`}
+            className={`${classes.textContent} ${classes.joinUsSection} ${classes.passive}`}
         >
             <Text
                 variant="header1"
