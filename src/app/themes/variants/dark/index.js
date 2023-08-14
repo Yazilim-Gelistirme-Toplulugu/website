@@ -134,6 +134,10 @@ export const typography = {
         fontWeight: 400,
         letterSpacing: 1,
         fontSize: 25
+    },
+    header11: {
+        letterSpacing: 1,
+        fontSize: 90
     }
 };
 
