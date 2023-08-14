@@ -7,6 +7,28 @@ import useStyles from './style';
 const Navbar = () => {
     const { spaces, color } = useNCoreTheme();
     const classes = useStyles();
+
+    const navbarButtons = [
+        {
+            title: "Anasayfa",
+            href: "#",
+        },
+        {
+            title: "Hakkımızda",
+            href: "#",
+        },
+        {
+            title: "Ekibimiz",
+            href: "#",
+        },
+        {
+            title: "Galeri",
+            href: "#",
+        },
+
+    ]
+
+
     return <div
         className={classes.navbar}
     >
@@ -20,37 +42,18 @@ const Navbar = () => {
             }}
 
         >
-            <Button
-                textColor='body'
-                color='danger'
-                className={classes.buttonLink}
-                title="Anasayfa"
-                variant="ghost"
-            />
-            <Button
-                textColor='body'
-                className={classes.buttonLink}
-                title="Hakkımızda"
-                variant="ghost"
-            />
-            <Button
-                textColor='body'
-                className={classes.buttonLink}
-                title="Ekibimiz"
-                variant="ghost"
-            />
-            <Button
-                textColor='body'
-                className={classes.buttonLink}
-                title="Çalışma Alanlarımız"
-                variant="ghost"
-            />
-            <Button
-                textColor='body'
-                className={classes.buttonLink}
-                title="Galeri"
-                variant="ghost"
-            />
+            {
+                navbarButtons.map((item) => {
+                    return <Button
+                        textColor='body'
+                        className={classes.buttonLink}
+                        title={item.title}
+                        variant="ghost"
+                        onClick={() => {
+                        }}
+                    />
+                })
+            }
         </div>
 
 

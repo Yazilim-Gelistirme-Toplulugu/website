@@ -16,7 +16,7 @@ const useStyles = createUseStyles({
         background: "rgba(0, 0, 0, 0.30)",
         boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
         backdropFilter: "blur(5px)",
-        gap: 40,
+      //  gap: 40,
     },
 
     sectionLinks: {
