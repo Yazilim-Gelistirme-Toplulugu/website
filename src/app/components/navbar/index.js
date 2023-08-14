@@ -1,44 +1,81 @@
 import React from 'react';
+import { Button, Text, useNCoreTheme } from 'ncore-web';
+import logo from "../../../../src/assets/image/components/logo.png"
+import useStyles from './style';
+
 
 const Navbar = () => {
-    return <div>
+    const { spaces, color } = useNCoreTheme();
+    const classes = useStyles();
+
+    const navbarButtons = [
+        {
+            title: "Anasayfa",
+            href: "#",
+        },
+        {
+            title: "Hakkımızda",
+            href: "#",
+        },
+        {
+            title: "Ekibimiz",
+            href: "#",
+        },
+        {
+            title: "Galeri",
+            href: "#",
+        },
+
+    ]
+
+
+    return <div
+        className={classes.navbar}
+    >
         <div>
+            <img src={logo} alt="" />
+        </div>
+        <div
+            className={classes.sectionLinks}
+            style={{
+                gap: spaces.inline * 6
+            }}
+
+        >
+            {
+                navbarButtons.map((item) => {
+                    return <Button
+                        textColor='body'
+                        className={classes.buttonLink}
+                        title={item.title}
+                        variant="ghost"
+                        onClick={() => {
+                        }}
+                    />
+                })
+            }
         </div>
 
 
         <div
-            className={classes.menuList}
+            className={classes.buttons}
             style={{
-                gap: spaces.inline * 2
+                gap: spaces.inline * 6
             }}
         >
-            <Text variant="header7">
-                Anasayfa
-            </Text>
-            <Text variant="header7">
-                Hakkımızda
-            </Text>
-            <Text variant="header7">
-                Ekibimiz
-            </Text>
-            <Text variant="header7">
-                Çalışma Alanlarımız
-            </Text>
-            <Text variant="header7">
-                Galeri
-            </Text>
-        </div>
-
-
-        <div>
             <Button
+                textColor='body'
                 title="İletişim"
                 variant="outline"
             />
             <Button
+                textColor='body'
+                className={classes.button}
                 title="Bize Katılın"
             />
         </div>
     </div>
 }
 export default Navbar;
+
+
