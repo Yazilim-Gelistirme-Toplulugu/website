@@ -13,24 +13,27 @@ const MainSection = () => {
         className={classes.main}
     >
         <img src={mainImage} alt="" width="100%" height="100%" />
-        <Text className={classes.maintext}
-            variant='header11'
-            style={{
-                fontWeight: 300
-            }}
-        >
-            <Text 
+        <div className={classes.maintext}>
+            <Text
                 color='orange'
                 variant='header11'
                 style={{
-                    marginRight: spaces.inline * 2,
-                    fontWeight: 700
+                    marginRight: spaces.inline * 4
                 }}
+            >Yazılım</Text>
+            <Text
+                color='body'
+                variant='header12'
             >
-                Yazılım
+                Geliştirme
             </Text>
-            Geliştirme Topluluğu
-        </Text>
+            <Text
+                color='body'
+                variant='header12'
+            >
+                Topluluğu
+            </Text>
+        </div>
     </div>
 }
 export default MainSection;

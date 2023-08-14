@@ -43,107 +43,113 @@ export const typography = {
         lineHeight: "normal"
     },
     header1: {
-        fontFamily: "Montserrat-Light",
+        fontFamily: "Quicksand-Light",
         fontWeight: 300,
         lineHeight: 1.3,
         fontSize: 48
     },
     header2: {
-        fontFamily: "Montserrat-Regular",
+        fontFamily: "Quicksand-Regular",
         fontWeight: 400,
         lineHeight: 1.3,
         fontSize: 32
     },
     header3: {
-        fontFamily: "Montserrat-Medium",
+        fontFamily: "Quicksand-Medium",
         fontWeight: 500,
         lineHeight: 1.3,
         fontSize: 26
     },
     header4: {
-        fontFamily: "Montserrat-Regular",
+        fontFamily: "Quicksand-Regular",
         fontWeight: 400,
         lineHeight: 1.3,
         fontSize: 22
     },
     header5: {
-        fontFamily: "Montserrat-SemiBold",
+        fontFamily: "Quicksand-SemiBold",
         fontWeight: 600,
         lineHeight: 1.3,
         fontSize: 22
     },
     header6: {
-        fontFamily: "Montserrat-Regular",
+        fontFamily: "Quicksand-Regular",
         fontWeight: 400,
         lineHeight: 1.3,
         fontSize: 18
     },
     header7: {
-        fontFamily: "Montserrat-Medium",
+        fontFamily: "Quicksand-Medium",
         fontWeight: 500,
         lineHeight: 1.3,
         fontSize: 16
     },
     header8: {
-        fontFamily: "Montserrat-SemiBold",
+        fontFamily: "Quicksand-SemiBold",
         fontWeight: 600,
         lineHeight: 1.3,
         fontSize: 14
     },
     header9: {
-        fontFamily: "Montserrat-SemiBold",
+        fontFamily: "Quicksand-SemiBold",
         fontWeight: 600,
         lineHeight: 1.3,
         fontSize: 12
     },
     body: {
-        fontFamily: "Montserrat-Regular",
+        fontFamily: "Quicksand-Regular",
         fontWeight: 400,
         lineHeight: 1.42,
         fontSize: 14
     },
     caption: {
-        fontFamily: "Montserrat-SemiBold",
+        fontFamily: "Quicksand-SemiBold",
         fontWeight: 600,
         letterSpacing: -0.5,
         lineHeight: 1.2,
         fontSize: 10
     },
     buttonSmall: {
-        fontFamily: "Montserrat-SemiBold",
+        fontFamily: "Quicksand-SemiBold",
         fontWeight: 600,
         letterSpacing: 0.5,
         lineHeight: 1.40,
         fontSize: 12
     },
     buttonMedium: {
-        fontFamily: "Montserrat-SemiBold",
+        fontFamily: "Quicksand-SemiBold",
         fontWeight: 600,
         letterSpacing: 0.5,
         lineHeight: 1.40,
         fontSize: 14
     },
     buttonLarge: {
-        fontFamily: "Montserrat-SemiBold",
+        fontFamily: "Quicksand-SemiBold",
         fontWeight: 600,
         letterSpacing: 0.5,
         lineHeight: 1.40,
         fontSize: 16
     },
     overline: {
-        fontFamily: "Montserrat-Regular",
+        fontFamily: "Quicksand-Regular",
         fontWeight: 400,
         textTransform: "uppercase",
         letterSpacing: 1,
         fontSize: 12
     },
     header10: {
-        fontFamily: "Montserrat-Regular",
+        fontFamily: "Quicksand-Regular",
         fontWeight: 400,
         letterSpacing: 1,
         fontSize: 25
     },
     header11: {
+        fontFamily: "Quicksand-Bold",
+        letterSpacing: 1,
+        fontSize: 90
+    },
+    header12: {
+        fontFamily: "Quicksand-Light",
         letterSpacing: 1,
         fontSize: 90
     }

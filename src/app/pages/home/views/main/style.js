@@ -7,16 +7,16 @@ const useStyles = createUseStyles({
         position: "relative"
     },
     maintext: {
-        fontFamily: "Quicksand",
-        fontWeight: "300",
         zIndex: "2",
         position: "absolute",
         display: "flex",
+        flexWrap: "wrap",
+        alignItems: "center",
+        justifyContent: "center",
         top: "50%",
         left: "50%",
         transform: "translate(-50%, -50%)",
-        textAlign: "center",
-        fontSize: "90px"
+        textAlign: "center"
     }
 })
 export default useStyles;
