@@ -2,12 +2,16 @@ import { Text, useNCoreTheme } from 'ncore-web';
 import React from 'react'
 import mainImage from "../../../../../assets/image/main/main.png"
 import useStyles from './style';
+import MouseIcon from '../../../../../assets/svgr/mouse';
 
 const MainSection = () => {
 
     const classes = useStyles();
 
-    const { spaces } = useNCoreTheme();
+    const {
+        spaces,
+        colors
+    } = useNCoreTheme();
 
     return <div
         className={classes.main}
@@ -34,6 +38,10 @@ const MainSection = () => {
                 Topluluğu
             </Text>
         </div>
+        <div className={classes.mouse}>
+            <MouseIcon size={60} color={colors.orange} />
+        </div>
+        
     </div>
 }
 export default MainSection;

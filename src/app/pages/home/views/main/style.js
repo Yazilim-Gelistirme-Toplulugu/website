@@ -3,11 +3,10 @@ import { createUseStyles } from "react-jss";
 const useStyles = createUseStyles({
     main: {
         width:"100%",
-        height:"100wh",
-        position: "relative"
+        height:"100vh",
+        position: "relative",
     },
     maintext: {
-        zIndex: "2",
         position: "absolute",
         display: "flex",
         flexWrap: "wrap",
@@ -17,6 +16,15 @@ const useStyles = createUseStyles({
         left: "50%",
         transform: "translate(-50%, -50%)",
         textAlign: "center"
+    },
+    mouse: {
+        position: "absolute",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        bottom: "10%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
     }
 })
 export default useStyles;
