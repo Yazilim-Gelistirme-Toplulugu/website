@@ -32,6 +32,8 @@ const Navbar = () => {
 
     ])
 
+   
+
 
 
     return <div
@@ -51,7 +53,7 @@ const Navbar = () => {
                 navbarButtons.map((item) => {
                     return <div
                         style={{
-                            paddingBottom: spaces.item / 3,
+                            paddingBottom: spaces.item / 10,
                             borderBottomColor: colors.body,
                             borderBottomStyle: "solid",
                             transition: "all .05s ease-in-out",
@@ -97,7 +99,6 @@ const Navbar = () => {
             />
             <Button
                 textColor='body'
-                className={classes.button}
                 title="Bize Katılın"
             />
         </div>

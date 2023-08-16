@@ -37,9 +37,6 @@ const useStyles = createUseStyles({
         //zIndex: -1,
     },
 
-    button: {
-        background: "linear-gradient(149deg, #FF563A 0%, #E9391E 100%)"
-    },
 
     buttons: {
         display: "flex",
