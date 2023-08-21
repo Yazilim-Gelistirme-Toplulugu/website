@@ -3,7 +3,7 @@ import useStyles from './style';
 import React, { useState } from 'react';
 import { Button, Text, useNCoreTheme } from 'ncore-web';
 
-const TeamsSection = () => {
+const AboutUsSection = () => {
     const { colors, spaces } = useNCoreTheme();
     const classes = useStyles();
 
@@ -99,4 +99,6 @@ const TeamsSection = () => {
 
     </div>
 }
-export default TeamsSection;
+export default AboutUsSection;
+
+
