@@ -16,8 +16,15 @@ const MainSection = () => {
     return <div
         className={classes.main}
     >
-        <img src={mainImage} alt="" width="100%" height="100%" />
-        <div className={classes.maintext}>
+        <img
+            src={mainImage}
+            alt=""
+            width="100%"
+            height="100%"
+        />
+        <div
+            className={classes.maintext}
+        >
             <Text
                 color='#ffffff'
                 variant='header1'
@@ -41,7 +48,6 @@ const MainSection = () => {
         <div className={classes.mouse}>
             <MouseIcon size={60} color={colors.orange} />
         </div>
-        
     </div>
 }
 export default MainSection;
