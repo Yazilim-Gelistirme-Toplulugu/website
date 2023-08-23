@@ -3,7 +3,8 @@ import React from 'react'
 import useStyles from './style';
 import MainSection from './views/main';
 import Navbar from '../../components/navbar';
-import TeamsSection from './views/aboutUs';
+import AboutUsSection from './views/aboutUs';
+import TeamsSection from './views/teams';
 
 const Home = () => {
 
@@ -17,6 +18,7 @@ const Home = () => {
   return <div>
     <Navbar/>
     <MainSection />
+    <AboutUsSection />
     <TeamsSection />
   </div>
 }

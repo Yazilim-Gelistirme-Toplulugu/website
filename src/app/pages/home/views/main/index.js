@@ -19,8 +19,8 @@ const MainSection = () => {
         <img src={mainImage} alt="" width="100%" height="100%" />
         <div className={classes.maintext}>
             <Text
-                color='orange'
-                variant='header11'
+                color='#ffffff'
+                variant='header1'
                 style={{
                     marginRight: spaces.inline * 4
                 }}
