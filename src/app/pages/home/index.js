@@ -5,6 +5,7 @@ import MainSection from './views/main';
 import Navbar from '../../components/navbar';
 import AboutUsSection from './views/aboutUs';
 import TeamsSection from './views/teams';
+import KeywordsSection from './views/keywords';
 
 const Home = () => {
 
@@ -20,6 +21,7 @@ const Home = () => {
     <MainSection />
     <AboutUsSection />
     <TeamsSection />
+    <KeywordsSection />
   </div>
 }
 
