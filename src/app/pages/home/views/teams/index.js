@@ -2,6 +2,7 @@ import React from 'react';
 import useStyles from './style';
 import { Text } from 'ncore-web';
 import { osman, sevinc, irem, saziye, seyda, esra, busra, sezai, alihaydar, ilknur, atakan, enes, mehmet, omer, mecit, selim, cennet, zehra } from '../../../../../assets/image/teams/membersPhoto/index';
+import Slider from 'react-slick';
 
 const TeamsSection = () => {
     const classes = useStyles();
@@ -15,7 +16,7 @@ const TeamsSection = () => {
         {
             id: 1,
             fullName: "Sevinç Tanış",
-            duty: "Yönetim Kurulu Başkan yardımcısı",
+            duty: "Yönetim Kurulu Başkan Yardımcısı",
             photo: sevinc,
         },
         {
@@ -116,6 +117,23 @@ const TeamsSection = () => {
         },
     ];
 
+    const settings = {
+        speed: 500,
+        slidesToShow: 6,
+        slidesToScroll: 2,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1600,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 5,
+                    slidesToScroll: 3,
+                }
+            },
+        ]
+    }
+
     return (
         <div
             className={classes.teams}
@@ -126,26 +144,49 @@ const TeamsSection = () => {
                 <div
                     className={classes.imageArea}
                 >
-                    {
-                        members.map(item => (
-                            <div
-                                key={item.id}
-                                className={classes.memberCard}
-                            >
-                                <img
-                                    src={item.photo}
-                                    className={classes.photo}
-                                    alt={item.fullName}
-                                />
-                            </div>
-                        ))}
+
+                    <Slider
+                        {...settings}
+                        adaptiveHeight={true}
+                    >
+                        {
+                            members.map(item => (
+                                <div
+                                    key={item.id}
+                                    className={classes.memberCard}
+                                >
+                                    <img
+                                        src={item.photo}
+                                        className={classes.photo}
+                                        alt={item.fullName}
+                                    />
+                                    <div
+                                        className={classes.personInfo}
+                                    >
+                                        <Text
+                                            color='body'
+                                            variant='header5'
+                                        >
+                                            {item.fullName}
+                                        </Text>
+                                        <Text
+                                            color='body'
+                                            variant='header7'
+                                        >
+                                            {item.duty}
+                                        </Text>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </Slider>
                 </div>
                 <div
                     className={classes.titleArea}
                 >
                     <Text
                         color='body'
-                        variant='header11'
+                        variant='header13'
                         style={{
                             transform: "rotate(90deg)",
                             justifyContent: "center",
