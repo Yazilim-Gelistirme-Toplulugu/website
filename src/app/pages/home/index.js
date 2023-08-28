@@ -6,6 +6,7 @@ import Navbar from '../../components/navbar';
 import AboutUsSection from './views/aboutUs';
 import TeamsSection from './views/teams';
 import KeywordsSection from './views/keywords';
+import SponsorsSection from './views/sponsors';
 
 const Home = () => {
 
@@ -22,6 +23,7 @@ const Home = () => {
     <AboutUsSection />
     <TeamsSection />
     <KeywordsSection />
+    <SponsorsSection />
   </div>
 }
 
