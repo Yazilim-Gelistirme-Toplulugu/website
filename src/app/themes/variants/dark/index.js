@@ -161,7 +161,7 @@ export const typography = {
     },
     title: {
         fontFamily: "Quicksand-Medium",
-        fontSize: " 40px",
+        fontSize: " 35px",
         fontStyle: "normal",
         fontWeight: "700",
         lineHeight: "normal",

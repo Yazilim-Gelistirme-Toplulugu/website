@@ -7,6 +7,7 @@ import AboutUsSection from './views/aboutUs';
 import TeamsSection from './views/teams';
 import KeywordsSection from './views/keywords';
 import SponsorsSection from './views/sponsors';
+import GallerySection from './views/gallery';
 
 const Home = () => {
 
@@ -24,6 +25,7 @@ const Home = () => {
     <TeamsSection />
     <KeywordsSection />
     <SponsorsSection />
+    <GallerySection />
   </div>
 }
 
