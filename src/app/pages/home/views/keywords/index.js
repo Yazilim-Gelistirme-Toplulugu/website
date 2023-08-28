@@ -1,6 +1,6 @@
 
 import useStyles from './style';
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Text, useNCoreTheme } from 'ncore-web';
 
 const KeywordsSection = () => {
@@ -8,25 +8,47 @@ const KeywordsSection = () => {
     const classes = useStyles();
     const keywords = ["HTML", "CSS", "JavaScript", "React", "React-Native", "Node.js", "No Sql", "Java", "C#"];
 
-    const animatedElement = document.querySelector(".keyword");
+    useEffect(() => {
+        const keywordLeft = document.querySelectorAll(".keywordLeft")
+        const keywordRight = document.querySelectorAll(".keywordRight")
+        if (keywordLeft) {
+            startContinuousAnimationLeft(keywordLeft)
+        }
+        if (keywordRight) {
+            startContinuousAnimationRight(keywordRight)
+        }
+    }, [])
 
-    function startContinuousAnimation() {
-        console.log(animatedElement)
-        /*let position = 0;
-         setInterval(() => {
-             position += 10;
-             animatedElement.style.left = position + 'px';
- 
-             if (position >= window.innerWidth) {
-                 position = -100;
-             }
-         }, 50);*/
+    const startContinuousAnimationLeft = (keyword) => {
+        let position = 0;
+        setInterval(() => {
+            position += 10;
+            for (let index = 0; index < keyword.length; index++) {
+                keyword[index].style.right = position + 'px';
+            }
+            if (position >= window.innerWidth) {
+                position = 0;
+            }
+        }, 60);
     }
 
-    startContinuousAnimation()
+    const startContinuousAnimationRight = (keyword) => {
+        let position = -window.innerWidth;
+        setInterval(() => {
+            position += 10;
+            for (let index = 0; index < keyword.length; index++) {
+                keyword[index].style.left = position + 'px';
+            }
+            if (position >= 0) {
+                position = -window.innerWidth;
+            }
+        }, 60);
+    }
+
+
 
     return <div
-        className={classes.main}
+        className={classes.container}
         style={{
             color: colors.body,
             paddingTop: spaces.container * 3,
@@ -42,10 +64,9 @@ const KeywordsSection = () => {
             }}
         >
             {
-                keywords.sort(() => Math.random() - 0.5).map((item, index) => (
-                    <div
-                        className={`${classes.keyword} ${classes.keywordsContainerLeft}`}
-                        //    id='keyword'
+                keywords.sort(() => Math.random() - 0.5).map((item, index) => {
+                    return <div
+                        className={`${classes.keyword} keywordRight`}
                         style={{
                             padding: spaces.container * 1,
                         }}
@@ -58,7 +79,25 @@ const KeywordsSection = () => {
                             {item}
                         </Text>
                     </div>
-                ))
+                })
+            }
+            {
+                keywords.sort(() => Math.random() - 0.5).map((item, index) => {
+                    return <div
+                        className={`${classes.keyword} keywordRight`}
+                        style={{
+                            padding: spaces.container * 1,
+                        }}
+                        key={index}
+                    >
+                        <Text
+                            color='body'
+                            variant='body'
+                        >
+                            {item}
+                        </Text>
+                    </div>
+                })
             }
 
         </div>
@@ -71,10 +110,9 @@ const KeywordsSection = () => {
             }}
         >
             {
-                keywords.sort(() => Math.random() - 0.5).map((item, index) => (
-                    <div
-                        className={`${classes.keyword} ${classes.keywordsContainerRight}`}
-                        //   id='keyword'
+                keywords.sort(() => Math.random() - 0.5).map((item, index) => {
+                    return <div
+                        className={`${classes.keyword} keywordLeft`}
                         style={{
                             padding: spaces.container * 1,
                         }}
@@ -87,7 +125,25 @@ const KeywordsSection = () => {
                             {item}
                         </Text>
                     </div>
-                ))
+                })
+            }
+            {
+                keywords.sort(() => Math.random() - 0.5).map((item, index) => {
+                    return <div
+                        className={`${classes.keyword} keywordLeft`}
+                        style={{
+                            padding: spaces.container * 1,
+                        }}
+                        key={index}
+                    >
+                        <Text
+                            color='body'
+                            variant='body'
+                        >
+                            {item}
+                        </Text>
+                    </div>
+                })
             }
         </div>
         <div
@@ -99,10 +155,9 @@ const KeywordsSection = () => {
             }}
         >
             {
-                keywords.sort(() => Math.random() - 0.5).map((item, index) => (
-                    <div
-                        className={`${classes.keyword} ${classes.keywordsContainerLeft}`}
-                        //    id='keyword'
+                keywords.sort(() => Math.random() - 0.5).map((item, index) => {
+                    return <div
+                        className={`${classes.keyword} keywordRight`}
                         style={{
                             padding: spaces.container * 1,
                         }}
@@ -115,7 +170,25 @@ const KeywordsSection = () => {
                             {item}
                         </Text>
                     </div>
-                ))
+                })
+            }
+            {
+                keywords.sort(() => Math.random() - 0.5).map((item, index) => {
+                    return <div
+                        className={`${classes.keyword}  keywordRight`}
+                        style={{
+                            padding: spaces.container * 1,
+                        }}
+                        key={index}
+                    >
+                        <Text
+                            color='body'
+                            variant='body'
+                        >
+                            {item}
+                        </Text>
+                    </div>
+                })
             }
         </div>
     </div>

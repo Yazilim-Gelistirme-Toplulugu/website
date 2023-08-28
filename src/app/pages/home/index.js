@@ -20,9 +20,9 @@ const Home = () => {
 
   return <div>
     <Navbar/>
-    <MainSection />
+     <MainSection />
     <AboutUsSection />
-    <TeamsSection />
+  {/*  <TeamsSection />*/} 
     <KeywordsSection />
     <SponsorsSection />
     <GallerySection />
