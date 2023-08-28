@@ -31,7 +31,8 @@ export const colors = {
     "gray96":               "hsl(0, 0%, 12%)",
     "gray98":               "hsl(0, 0%, 10%)",
     "gray100":              "hsl(0, 0%, 8%)",
-    "modalBackground":      "rgba(0, 0, 0, 0.5)"
+    "modalBackground":      "rgba(0, 0, 0, 0.5)",
+    "backgraundColor":      "#021524",
 };
 
 export const typography = {
