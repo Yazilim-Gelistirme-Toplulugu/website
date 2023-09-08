@@ -1,72 +1,72 @@
 export {
     default as osman 
-} from "./osman.jpeg"
+} from "./osman.png"
 
 export {
     default as sevinc 
-} from "./sevinc.jpg"
+} from "./sevinc.png"
 
 export {
     default as irem 
-} from "./irem.jpeg"
+} from "./irem.png"
 
 export {
     default as saziye 
-} from "./saziye.jpeg"
+} from "./saziye.png"
 
 export {
     default as seyda 
-} from "./seyda.jpeg"
+} from "./seyda.png"
 
 export {
     default as esra 
-} from "./esra.jpeg"
+} from "./esra.png"
 
 export {
     default as busra 
-} from "./busra.jpeg"
+} from "./busra.png"
 
 export {
     default as sezai 
-} from "./sezai.jpeg"
+} from "./sezai.png"
 
 export {
     default as alihaydar 
-} from "./alihaydar.jpeg"
+} from "./aliHaydar.png"
 
 export {
     default as ilknur 
-} from "./ilknur.jpeg"
+} from "./ilknur.png"
 
 export {
     default as atakan 
-} from "./atakan.jpeg"
+} from "./atakan.png"
 
 export {
     default as enes 
-} from "./enes.jpeg"
+} from "./enes.png"
 
 
 export {
     default as mehmet 
-} from "./mehmet.jpeg"
+} from "./mehmet.png"
 
 export {
     default as omer 
-} from "./omer.jpeg"
+} from "./omer.png"
 
 export {
     default as mecit 
-} from "./mecit.jpeg"
+} from "./mecit.png"
 
 export {
     default as selim 
-} from "./selim.jpg"
+} from "./selim.png"
 
 export {
     default as cennet 
-} from "./cennet.jpeg"
+} from "./cennet.png"
 
 export {
     default as zehra 
-} from "./zehra.jpeg"
+} from "./zehra.png"
