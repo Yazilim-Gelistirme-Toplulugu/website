@@ -17,6 +17,7 @@ const useStyles = createUseStyles({
         display: "flex",
         flexDirection: "column",
         height:"60vh",
+        cursor: "pointer",
     },
 })
 export default useStyles;

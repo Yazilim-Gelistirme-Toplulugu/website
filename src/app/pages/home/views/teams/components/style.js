@@ -2,6 +2,8 @@ import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
     container: {
+        border: "2px solid var(--light---small, #FFF)",
+        borderRadius: "0px 30px 30px 30px",
         position: "relative",
         "&:hover > div": {
             backgroundColor: "rgba(2, 21, 36, .6)",
