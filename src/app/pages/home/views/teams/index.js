@@ -1,10 +1,38 @@
 import React from 'react';
 import useStyles from './style';
-import { Text } from 'ncore-web';
-import { osman, sevinc, irem, saziye, seyda, esra, busra, sezai, alihaydar, ilknur, atakan, enes, mehmet, omer, mecit, selim, cennet, zehra } from '../../../../../assets/image/teams/membersPhoto/index';
+import { Text, useNCoreTheme } from 'ncore-web';
+import {
+    osman,
+    sevinc,
+    irem,
+    saziye,
+    seyda,
+    esra,
+    busra,
+    sezai,
+    alihaydar,
+    ilknur,
+    atakan,
+    enes,
+    mehmet,
+    omer,
+    mecit,
+    selim,
+    cennet,
+    zehra,
+} from '../../../../../assets/image/teams/membersPhoto/index';
+import TeamMember from './components';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const TeamsSection = () => {
     const classes = useStyles();
+
+    const {
+        colors,
+        spaces
+    } = useNCoreTheme();
+
     const members = [
         {
             id: 0,
@@ -116,49 +144,84 @@ const TeamsSection = () => {
         },
     ];
 
-    return (
-        <div
-            className={classes.teams}
+    const splitMembers = () => {
+        let startIndex = 0;
+        let splitedMembers = [];
+        let i = 0;
+
+        while (i < members.length) {
+
+            let partMembers = [];
+
+            for (i = startIndex; i < startIndex + 6 && i < members.length; i++) {
+                partMembers.push(members[i])
+            }
+
+            splitedMembers.push(partMembers)
+            startIndex += 6;
+
+        }
+
+        return splitedMembers;
+    }
+
+    const renderTeamsSection = () => {
+
+        return <Carousel
+            showStatus={false}
+            showArrows={false}
+            showThumbs={false}
+            autoPlay={true}
+            interval={3000}
+            infiniteLoop={true}
+            emulateTouch={true}
         >
-            <div
-                className={classes.content}
-            >
-                <div
-                    className={classes.imageArea}
-                >
-                    {
-                        members.map(item => (
-                            <div
-                                key={item.id}
-                                className={classes.memberCard}
-                            >
-                                <img
-                                    src={item.photo}
-                                    className={classes.photo}
-                                    alt={item.fullName}
-                                />
-                            </div>
-                        ))}
-                </div>
-                <div
-                    className={classes.titleArea}
-                >
-                    <Text
-                        color='body'
-                        variant='header11'
+            {
+                splitMembers().map((item) => {
+                    return <div
+                        className={classes.sliderItem}
                         style={{
-                            transform: "rotate(90deg)",
-                            justifyContent: "center",
-                            alignItems: "center",
+                            gap: spaces.item
                         }}
                     >
-                        Ekibimiz
-                    </Text>
-                </div>
+                        {
+                            item.map(subItem => {
+                                return <TeamMember {...subItem} />
+                            })
+                        }
+                    </div>
+                })
+            }
+        </Carousel>
+    }
 
-            </div>
+    return <div
+        className={classes.container}
+        style={{
+            backgroundColor: colors.layer1
+        }}
+    >
+        <div
+            className={classes.titleContainer}
+            style={{
+                backgroundColor: colors.orange,
+                padding: spaces.item
+            }}
+        >
+            <Text
+                variant='header13'
+            >Ekibimiz</Text>
         </div>
-    );
+        <div
+            className={classes.sliderContainer}
+            style={{
+                gap: spaces.item,
+                padding: spaces.container * 2
+            }}
+        >
+            {renderTeamsSection()}
+        </div>
+    </div>
 };
 
 export default TeamsSection;

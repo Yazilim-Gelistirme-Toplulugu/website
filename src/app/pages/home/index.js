@@ -15,7 +15,12 @@ const Home = () => {
     colors
   } = useNCoreTheme();
 
-  return <div>
+  return <div
+    style={{
+      display: "flex",
+      flexDirection: "column"
+    }}
+  >
     <Navbar/>
     <MainSection />
     <AboutUsSection />
