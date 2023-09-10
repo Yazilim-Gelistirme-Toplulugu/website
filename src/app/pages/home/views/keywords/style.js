@@ -1,9 +1,7 @@
 import { createUseStyles } from "react-jss";
-import { colors } from "../../../../themes/variants/dark";
 const useStyles = createUseStyles({
     container: {
         display: "flex",
-        background: colors.backgraundColor,
         flexDirection: "column",
         alignItems: "center",
         overflow: "hidden",

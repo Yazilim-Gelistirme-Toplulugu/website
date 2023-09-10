@@ -45,12 +45,11 @@ const KeywordsSection = () => {
         }, 60);
     }
 
-
-
     return <div
         className={classes.container}
         style={{
             color: colors.body,
+            backgroundColor: colors.backgroundColor,
             paddingTop: spaces.container * 3,
             paddingBottom: spaces.container * 3,
         }}
