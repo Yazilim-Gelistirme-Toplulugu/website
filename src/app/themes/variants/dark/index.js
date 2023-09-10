@@ -168,6 +168,13 @@ export const typography = {
         letterSpacing: 1,
         fontSize: 16
     },
+    title: {
+        fontFamily: "Quicksand-Medium",
+        fontSize: " 35px",
+        fontStyle: "normal",
+        fontWeight: "700",
+        lineHeight: "normal",
+    }
 };
 
 const theme = {

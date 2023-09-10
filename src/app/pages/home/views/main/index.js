@@ -26,8 +26,8 @@ const MainSection = () => {
             className={classes.maintext}
         >
             <Text
-                color='#ffffff'
-                variant='header1'
+                color="orange"
+                variant='header11'
                 style={{
                     marginRight: spaces.inline * 4
                 }}

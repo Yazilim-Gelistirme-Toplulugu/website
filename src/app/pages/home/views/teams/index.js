@@ -43,7 +43,7 @@ const TeamsSection = () => {
         {
             id: 1,
             fullName: "Sevinç Tanış",
-            duty: "Yönetim Kurulu Başkan yardımcısı",
+            duty: "Yönetim Kurulu Başkan Yardımcısı",
             photo: sevinc,
         },
         {

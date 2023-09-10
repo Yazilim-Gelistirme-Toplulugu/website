@@ -5,6 +5,9 @@ import MainSection from './views/main';
 import Navbar from '../../components/navbar';
 import AboutUsSection from './views/aboutUs';
 import TeamsSection from './views/teams';
+import KeywordsSection from './views/keywords';
+import SponsorsSection from './views/sponsors';
+import GallerySection from './views/gallery';
 
 const Home = () => {
 
@@ -22,9 +25,12 @@ const Home = () => {
     }}
   >
     <Navbar/>
-    <MainSection />
+     <MainSection />
     <AboutUsSection />
-    <TeamsSection />
+    <TeamsSection /> 
+    <KeywordsSection />
+    <SponsorsSection />
+    <GallerySection />
   </div>
 }
 
