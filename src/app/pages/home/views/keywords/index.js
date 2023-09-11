@@ -22,27 +22,27 @@ const KeywordsSection = () => {
     const startContinuousAnimationLeft = (keyword) => {
         let position = 0;
         setInterval(() => {
-            position += 10;
+            position += 1;
             for (let index = 0; index < keyword.length; index++) {
                 keyword[index].style.right = position + 'px';
             }
             if (position >= window.innerWidth) {
                 position = 0;
             }
-        }, 60);
+        }, 30);
     }
 
     const startContinuousAnimationRight = (keyword) => {
         let position = -window.innerWidth;
         setInterval(() => {
-            position += 10;
+            position += 1;
             for (let index = 0; index < keyword.length; index++) {
                 keyword[index].style.left = position + 'px';
             }
             if (position >= 0) {
                 position = -window.innerWidth;
             }
-        }, 60);
+        }, 30);
     }
 
     return <div
