@@ -25,7 +25,7 @@ const Home = () => {
     }}
   >
     <Navbar/>
-     <MainSection />
+    <MainSection />
     <AboutUsSection />
     <TeamsSection /> 
     <KeywordsSection />
