@@ -4,7 +4,6 @@ const useStyles = createUseStyles({
     main: {
         width: "100%",
         height: "100vh",
-        position: "relative",
     },
     maintext: {
         position: "absolute",

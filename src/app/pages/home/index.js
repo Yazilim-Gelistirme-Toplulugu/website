@@ -8,6 +8,7 @@ import TeamsSection from './views/teams';
 import KeywordsSection from './views/keywords';
 import SponsorsSection from './views/sponsors';
 import GallerySection from './views/gallery';
+import Footer from '../../components/footer';
 
 const Home = () => {
 
@@ -31,6 +32,7 @@ const Home = () => {
     <KeywordsSection />
     <SponsorsSection />
     <GallerySection />
+    <Footer />
   </div>
 }
 
