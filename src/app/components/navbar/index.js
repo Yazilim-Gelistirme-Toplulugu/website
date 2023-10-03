@@ -101,7 +101,7 @@ const Navbar = () => {
                 textColor='body'
                 title="İletişim"
                 variant="outline"
-                onClick={navigate("/contact")}
+              //  onClick={navigate("/contact")} // bu buton loop
             />
             <Button
                 textColor='body'

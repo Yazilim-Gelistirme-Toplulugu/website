@@ -31,37 +31,53 @@ const Contact = () => {
         >
             <Navbar />
             <div
-                className={classes.content}>
-                <div
-                    className={classes.mainContent}
+                className={classes.mainContent}
+            >
+                <Text
+                    color='body'
+                    variant='header14'
                 >
-                    <Text
-                        color='body'
-                        variant='title'
-                    >
-                        Bizimle İletişime Geç!
-                    </Text>
-                    <div
-                        className={classes.inputArea}
-                    >
-                        <TextInput
-                            title="İsim Soyisim"
-                        />
-                        <TextInput
-                            title="E-mail"
-                        />
-                        <TextInput
-                            title="Mesaj"
-                        />
-                    </div>
-                    <Button
-                        textColor='body'
-                        title="Gönder"
+                    Bizimle İletişime Geç!
+                </Text>
+                <div
+                    className={classes.inputArea}
+                >
+                    <TextInput
+                        title="İsim Soyisim"
+                        style={{
+                            borderRadius: "32px",
+                            background: "#0B3F65",
+                            width: "100%",
+                            height: "20px"
+                        }}
+                    />
+                    <TextInput
+                        title="E-mail"
+                        style={{
+                            borderRadius: "32px",
+                            background: "#0B3F65",
+                            width: "100%",
+                            height: "20px"
+                        }}
+                    />
+                    <TextInput
+                        title="Mesaj"
+                        multiline="true"
+                        style={{
+                            borderRadius: "32px",
+                            background: "#0B3F65",
+                            width: "100%",
+                        }}
                     />
                 </div>
+                <Button
+                    textColor='body'
+                    title="Gönder"
+                />
             </div>
-            <Footer />
+
         </div>
+        <Footer />
     </div>
 }
 
