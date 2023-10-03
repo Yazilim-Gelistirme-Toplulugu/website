@@ -32,7 +32,7 @@ const Footer = () => {
         {
             title: "Galeri",
             href: "#",
-            isActive: true
+            isActive: false
         },
 
     ])

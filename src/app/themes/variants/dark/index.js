@@ -178,15 +178,15 @@ export const typography = {
         lineHeight: "normal",
     },
     copyright: {
-        fontFamily: "Quicksand",
+        fontFamily: "Quicksand-Regular",
         fontSize: "13px",
         fontStyle: "normal",
         fontWeight: "400",
         lineHeight: "normal",
     },
     header16:{
-        fontFamily: "Quicksand",
-        fontSize: "25px",
+        fontFamily: "Quicksand-SemiBold",
+        fontSize: "20px",
         fontStyle: "normal",
         fontWeight: "600",
         lineHeight: "normal",

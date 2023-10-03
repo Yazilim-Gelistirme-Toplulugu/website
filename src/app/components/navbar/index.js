@@ -2,17 +2,19 @@ import React, { useState } from 'react';
 import { Button, Text, useNCoreTheme } from 'ncore-web';
 import logo from "../../../../src/assets/image/components/logo.png"
 import useStyles from './style';
-
+import { useHistory, useNavigate } from 'react-router-dom';
+import ContactPage from '../../pages/contact/index'
 
 const Navbar = () => {
     const { spaces, colors } = useNCoreTheme();
     const classes = useStyles();
-
+    
+    const navigate = useNavigate();
     const [navbarButtons, setNavbarButtons] = useState([
         {
             title: "Anasayfa",
             href: "#",
-            isActive: true
+            isActive: false
         },
         {
             title: "Hakkımızda",
@@ -33,7 +35,10 @@ const Navbar = () => {
     ])
 
    
-
+    /*const handleButtonClick = () => {
+        const externalURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdo7ylOulj-Oa3HydpB8tppgShYSQXXJdHhEpy8vmcAp2XiKg/viewform';
+        window.location.href = externalURL;
+      };*/
 
 
     return <div
@@ -96,10 +101,12 @@ const Navbar = () => {
                 textColor='body'
                 title="İletişim"
                 variant="outline"
+                onClick={navigate("/contact")}
             />
             <Button
                 textColor='body'
                 title="Bize Katılın"
+              //  onClick={handleButtonClick()}
             />
         </div>
     </div>
