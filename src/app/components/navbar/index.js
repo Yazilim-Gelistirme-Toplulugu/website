@@ -4,11 +4,12 @@ import logo from "../../../../src/assets/image/components/logo.png"
 import useStyles from './style';
 import { useHistory, useNavigate } from 'react-router-dom';
 import ContactPage from '../../pages/contact/index'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const { spaces, colors } = useNCoreTheme();
     const classes = useStyles();
-    
+
     const navigate = useNavigate();
     const [navbarButtons, setNavbarButtons] = useState([
         {
@@ -34,7 +35,7 @@ const Navbar = () => {
 
     ])
 
-   
+
     /*const handleButtonClick = () => {
         const externalURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdo7ylOulj-Oa3HydpB8tppgShYSQXXJdHhEpy8vmcAp2XiKg/viewform';
         window.location.href = externalURL;
@@ -101,13 +102,22 @@ const Navbar = () => {
                 textColor='body'
                 title="İletişim"
                 variant="outline"
-              //  onClick={navigate("/contact")} // bu buton loop
+                onclick={() => {
+                    navigate("/contact")
+                }}
             />
-            <Button
-                textColor='body'
-                title="Bize Katılın"
-              //  onClick={handleButtonClick()}
-            />
+            <Link
+                to="https://docs.google.com/forms/d/e/1FAIpQLSdo7ylOulj-Oa3HydpB8tppgShYSQXXJdHhEpy8vmcAp2XiKg/viewform"
+                target="_blank"
+                style={{
+                    textDecoration: "none"
+                }}
+            >
+                <Button
+                    textColor='body'
+                    title="Bize Katılın"
+                />
+            </Link>
         </div>
     </div>
 }

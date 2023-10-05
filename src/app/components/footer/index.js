@@ -7,7 +7,7 @@ import DiscordIcon from '../../../assets/svgr/discord';
 import InstagramIcon from '../../../assets/svgr/instagram/index.js';
 import LinkedInIcon from '../../../assets/svgr/linkedIn/index.js';
 import XIcon from '../../../assets/svgr/x/index.js';
-
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     const { spaces, colors } = useNCoreTheme();
@@ -115,10 +115,43 @@ const Footer = () => {
                 <div
                     className={classes.socialMediaIcons}
                 >
-                    <InstagramIcon size={30} color={colors.body} />
-                    <XIcon size={30} color={colors.body} />
-                    <LinkedInIcon size={30} color={colors.body} />
-                    <DiscordIcon size={30} color={colors.body} />
+
+                    <Link
+                        to="https://www.instagram.com/ktun.yazilimgelistirme/?hl=tr"
+                        target="_blank"
+                    >
+                        <InstagramIcon
+                            size={30}
+                            color={colors.body}
+                        />
+                    </Link>
+                    <Link
+                        to="https://twitter.com/KTUNYazilimGT"
+                        target="_blank"
+                    >
+                        <XIcon
+                            size={30}
+                            color={colors.body}
+                        />
+                    </Link>
+                    <Link
+                        to="https://www.linkedin.com/company/ktun-yazilimgelistirme/mycompany/"
+                        target="_blank"
+                    >
+                        <LinkedInIcon
+                            size={30}
+                            color={colors.body}
+                        />
+                    </Link>
+                    <Link
+                        to="http://discord.gg/NgKXpsyatr"
+                        target="_blank"
+                    >
+                        <DiscordIcon
+                            size={30}
+                            color={colors.body}
+                        />
+                    </Link>
                 </div>
             </div>
         </div>

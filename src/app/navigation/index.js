@@ -3,8 +3,9 @@ import Home from "../pages/home";
 import {
     Routes,
     Route,
-    Navigate
+    Navigate,
 } from "react-router-dom";
+
 
 const Navigation = () => {
     return <Routes>
@@ -20,7 +21,7 @@ const Navigation = () => {
             path="/home"
             element={<Home />}
         />
-         <Route
+        <Route
             path="/contact"
             element={<Contact />}
         />
