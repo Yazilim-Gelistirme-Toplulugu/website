@@ -67,7 +67,7 @@ const KeywordsSection = () => {
                     return <div
                         className={`${classes.keyword} keywordRight`}
                         style={{
-                            padding: spaces.container * 1,
+                            padding: `${spaces.container}px ${spaces.container / 2}px`,
                         }}
                         key={index}
                     >
@@ -85,7 +85,7 @@ const KeywordsSection = () => {
                     return <div
                         className={`${classes.keyword} keywordRight`}
                         style={{
-                            padding: spaces.container * 1,
+                            padding: `${spaces.container}px ${spaces.container / 2}px`,
                         }}
                         key={index}
                     >
@@ -113,7 +113,7 @@ const KeywordsSection = () => {
                     return <div
                         className={`${classes.keyword} keywordLeft`}
                         style={{
-                            padding: spaces.container * 1,
+                            padding: `${spaces.container}px ${spaces.container / 2}px`,
                         }}
                         key={index}
                     >
@@ -131,7 +131,7 @@ const KeywordsSection = () => {
                     return <div
                         className={`${classes.keyword} keywordLeft`}
                         style={{
-                            padding: spaces.container * 1,
+                            padding: `${spaces.container}px ${spaces.container / 2}px`,
                         }}
                         key={index}
                     >
@@ -158,7 +158,7 @@ const KeywordsSection = () => {
                     return <div
                         className={`${classes.keyword} keywordRight`}
                         style={{
-                            padding: spaces.container * 1,
+                            padding: `${spaces.container}px ${spaces.container / 2}px`,
                         }}
                         key={index}
                     >
@@ -176,7 +176,7 @@ const KeywordsSection = () => {
                     return <div
                         className={`${classes.keyword}  keywordRight`}
                         style={{
-                            padding: spaces.container * 1,
+                            padding: `${spaces.container}px ${spaces.container / 2}px`,
                         }}
                         key={index}
                     >

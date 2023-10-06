@@ -1,46 +1,42 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Button, Text, useNCoreTheme } from 'ncore-web';
 import logo from "../../../../src/assets/image/components/logo.png"
 import useStyles from './style';
-import { useHistory, useNavigate } from 'react-router-dom';
-import ContactPage from '../../pages/contact/index'
+import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const { spaces, colors } = useNCoreTheme();
     const classes = useStyles();
-
     const navigate = useNavigate();
+
     const [navbarButtons, setNavbarButtons] = useState([
         {
             title: "Anasayfa",
             href: "#",
-            isActive: false
+            isActive: false,
+            navigateSection: "#main"
         },
         {
             title: "Hakkımızda",
             href: "#",
-            isActive: false
+            isActive: false,
+            navigateSection: "#aboutUs"
         },
         {
             title: "Ekibimiz",
             href: "#",
-            isActive: false
+            isActive: false,
+            navigateSection: "#teams"
         },
-        {
+        /* {
             title: "Galeri",
             href: "#",
-            isActive: false
-        },
+            isActive: false,
+            navigateSection: "#gallery"
+        }, */
 
     ])
-
-
-    /*const handleButtonClick = () => {
-        const externalURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdo7ylOulj-Oa3HydpB8tppgShYSQXXJdHhEpy8vmcAp2XiKg/viewform';
-        window.location.href = externalURL;
-      };*/
-
 
     return <div
         className={classes.navbar}
@@ -83,6 +79,10 @@ const Navbar = () => {
 
                                     _navbarButtons[currentIndex].isActive = true
                                     setNavbarButtons(_navbarButtons)
+                                    navigate("/home") // yeni bir yan sayfa eklenirse değiştirilmeli.
+                                    setTimeout(() => {
+                                        window.open(item.navigateSection, "_self")
+                                    }, 250);
                                 }
                             }}
                         />
@@ -90,8 +90,6 @@ const Navbar = () => {
                 })
             }
         </div>
-
-
         <div
             className={classes.buttons}
             style={{
@@ -102,7 +100,7 @@ const Navbar = () => {
                 textColor='body'
                 title="İletişim"
                 variant="outline"
-                onclick={() => {
+                onClick={() => {
                     navigate("/contact")
                 }}
             />
@@ -122,5 +120,3 @@ const Navbar = () => {
     </div>
 }
 export default Navbar;
-
-

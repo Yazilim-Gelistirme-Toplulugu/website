@@ -1,5 +1,5 @@
-import { Button, Container, Text, useNCoreTheme, TextInput } from 'ncore-web';
-import React from 'react'
+import { Button, Container, Text, useNCoreTheme, TextInput, Dialog } from 'ncore-web';
+import React, { useState } from 'react'
 import useStyles from './style';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
@@ -13,6 +13,11 @@ const Contact = () => {
         spaces,
         colors
     } = useNCoreTheme();
+
+    const [isVisibleDialog, setIsVisibleDialog] = useState({
+        isVisible: false,
+        title: null
+    });
 
     return <div
         style={{
@@ -43,41 +48,75 @@ const Contact = () => {
                     className={classes.inputArea}
                 >
                     <TextInput
-                        title="İsim Soyisim"
+                        title='İsim Soyisim'
+                        placeholder='İsim Soyisim'
+                        isRequired //false olmasına ragmen * ile gösteriliyor
+                        spreadBehaviour='free'
                         style={{
                             borderRadius: "32px",
                             background: "#0B3F65",
-                            width: "100%",
-                            height: "20px"
+                            alignSelf: "stretch"
+                            
                         }}
                     />
                     <TextInput
-                        title="E-mail"
+                        title='E-mail'
+                        placeholder='E-mail'
+                        isRequired
+                        spreadBehaviour='free'
                         style={{
                             borderRadius: "32px",
                             background: "#0B3F65",
-                            width: "100%",
-                            height: "20px"
+                            alignSelf: "stretch"
                         }}
                     />
                     <TextInput
-                        title="Mesaj"
-                        multiline="true"
+                        title='Mesaj'
+                        placeholder='Mesaj'
+                        isRequired='true'
+                        multiline
+                        spreadBehaviour='free'
                         style={{
                             borderRadius: "32px",
                             background: "#0B3F65",
-                            width: "100%",
+                            alignSelf: "stretch"
                         }}
                     />
                 </div>
                 <Button
                     textColor='body'
                     title="Gönder"
+                    spreadBehaviour='free'
+                    onClick={() => {
+                        if (true) { //gönderim durumları yazılacak
+                            setIsVisibleDialog({
+                                isVisible: true,
+                                title: "Mesajınız gönderildi."
+                            })
+                        } else {
+                            setIsVisibleDialog({
+                                isVisible: true,
+                                title: "Mesajınız Gönderilemedi:( /nE-mail adresininizi ve mesajınızı girdiğinizden emin olun."
+                            })
+                        }
+                    }}
                 />
             </div>
 
         </div>
         <Footer />
+        <Dialog
+            isVisible={isVisibleDialog.isVisible}
+            variant='info'
+            onOverlayPress={() => {
+                setIsVisibleDialog({
+                    isVisible: false,
+                    title: null
+                })
+            }}
+            title={isVisibleDialog.title ? isVisibleDialog.title : ""}
+        >
+        </Dialog>
     </div>
 }
 

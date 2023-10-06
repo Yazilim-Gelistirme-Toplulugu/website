@@ -197,6 +197,7 @@ const TeamsSection = () => {
 
     return <div
         className={classes.container}
+        id='teams'
         style={{
             backgroundColor: colors.layer1
         }}

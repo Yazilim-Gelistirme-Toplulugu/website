@@ -15,6 +15,7 @@ const MainSection = () => {
 
     return <div
         className={classes.main}
+        id='main'
     >
         <img
             src={mainImage}

@@ -8,31 +8,36 @@ import InstagramIcon from '../../../assets/svgr/instagram/index.js';
 import LinkedInIcon from '../../../assets/svgr/linkedIn/index.js';
 import XIcon from '../../../assets/svgr/x/index.js';
 import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
     const { spaces, colors } = useNCoreTheme();
     const classes = useStyles();
-
+    const navigate = useNavigate();
     const [footerButtons, setFooterButtons] = useState([
         {
             title: "Anasayfa",
             href: "#",
-            isActive: false
+            isActive: false,
+            navigateSection: "/home#mainSection"
         },
         {
             title: "Hakkımızda",
             href: "#",
-            isActive: false
+            isActive: false,
+            navigateSection: "/home#aboutUsSection"
         },
         {
             title: "Ekibimiz",
             href: "#",
-            isActive: false
+            isActive: false,
+            navigateSection: "/home#teamsSection"
         },
         {
             title: "Galeri",
             href: "#",
-            isActive: false
+            isActive: false,
+            navigateSection: "/home#gallerySection"
         },
 
     ])
@@ -84,6 +89,7 @@ const Footer = () => {
 
                                         _footerButtons[currentIndex].isActive = true
                                         setFooterButtons(_footerButtons)
+                                        navigate(item.navigateSection)
                                     }
                                 }}
                             />

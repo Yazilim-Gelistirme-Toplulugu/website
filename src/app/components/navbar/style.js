@@ -18,7 +18,6 @@ const useStyles = createUseStyles({
         backdropFilter: "blur(5px)",
       //  gap: 40,
     },
-
     sectionLinks: {
         display: "flex",
         flexDirection: "row",
@@ -26,18 +25,14 @@ const useStyles = createUseStyles({
         alignItems: "center",
         userSelect: "none"
     },
-
     buttonLink: {
         borderRadius: "50px !important",
         padding: "0px !important",
         margin: "0px !important",
     },
-
     activeLink:{
         //zIndex: -1,
     },
-
-
     buttons: {
         display: "flex",
         flexDirection: "row",

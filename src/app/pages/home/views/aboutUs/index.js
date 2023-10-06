@@ -38,6 +38,7 @@ const AboutUsSection = () => {
 
     return <div
         className={classes.main}
+        id='aboutUs'
     >
 
         {aboutUsSections.map((item) => {

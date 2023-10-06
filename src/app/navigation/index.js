@@ -1,5 +1,9 @@
 import Contact from "../pages/contact";
 import Home from "../pages/home";
+import MainSection from '../pages/home/views/main'
+import AboutUsSection from '../pages/home/views/aboutUs'
+import TeamsSection from '../pages/home/views/teams'
+import GallerySection from '../pages/home/views/gallery'
 import {
     Routes,
     Route,
