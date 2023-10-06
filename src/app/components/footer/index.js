@@ -105,8 +105,24 @@ const Footer = () => {
                     gap: spaces.inline * 15,
                 }}
             >
-                <img src={ygtLogo} alt="" />
-                <img src={ktunLogo} alt="" />
+                <img
+                    src={ygtLogo}
+                    alt=""
+                    onClick={() => {
+                        setTimeout(() => {
+                            window.open("#main", "_self")
+                        }, 250);
+                    }}
+                />
+                <Link
+                    to="https://www.ktun.edu.tr/"
+                    target="_blank"
+                >
+                    <img
+                        src={ktunLogo}
+                        alt=""
+                    />
+                </Link>
             </div>
             <div
                 className={classes.followus}
@@ -123,7 +139,6 @@ const Footer = () => {
                 <div
                     className={classes.socialMediaIcons}
                 >
-
                     <Link
                         to="https://www.instagram.com/ktun.yazilimgelistirme/?hl=tr"
                         target="_blank"

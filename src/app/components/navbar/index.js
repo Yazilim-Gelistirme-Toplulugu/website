@@ -42,7 +42,15 @@ const Navbar = () => {
         className={classes.navbar}
     >
         <div>
-            <img src={logo} alt="" />
+            <img
+                src={logo}
+                alt=""
+                onClick={() => {
+                    setTimeout(() => {
+                        window.open("#main", "_self")
+                    }, 250);
+                }}
+            />
         </div>
         <div
             className={classes.sectionLinks}
