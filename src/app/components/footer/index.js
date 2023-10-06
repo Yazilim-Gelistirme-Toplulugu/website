@@ -19,25 +19,25 @@ const Footer = () => {
             title: "Anasayfa",
             href: "#",
             isActive: false,
-            navigateSection: "/home#mainSection"
+            navigateSection: "#main"
         },
         {
             title: "Hakkımızda",
             href: "#",
             isActive: false,
-            navigateSection: "/home#aboutUsSection"
+            navigateSection: "#aboutUs"
         },
         {
             title: "Ekibimiz",
             href: "#",
             isActive: false,
-            navigateSection: "/home#teamsSection"
+            navigateSection: "#teams"
         },
         {
             title: "Galeri",
             href: "#",
             isActive: false,
-            navigateSection: "/home#gallerySection"
+            navigateSection: "/home#gallery"
         },
 
     ])
@@ -59,7 +59,7 @@ const Footer = () => {
             <div
                 className={classes.sectionLinks}
                 style={{
-                    gap: spaces.inline / 10,
+                    gap: spaces.inline * 0,
 
                 }}
 
@@ -68,7 +68,6 @@ const Footer = () => {
                     footerButtons.map((item) => {
                         return <div
                             style={{
-                                paddingBottom: spaces.item / 10,
                                 transition: "all .05s ease-in-out",
                             }}
                         >
@@ -89,7 +88,10 @@ const Footer = () => {
 
                                         _footerButtons[currentIndex].isActive = true
                                         setFooterButtons(_footerButtons)
-                                        navigate(item.navigateSection)
+                                        navigate("/home") // yeni bir yan sayfa eklenirse değiştirilmeli.
+                                        setTimeout(() => {
+                                            window.open(item.navigateSection, "_self")
+                                        }, 250);
                                     }
                                 }}
                             />
