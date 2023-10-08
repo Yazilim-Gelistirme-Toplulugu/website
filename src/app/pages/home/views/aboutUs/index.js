@@ -35,11 +35,9 @@ const AboutUsSection = () => {
 
     ])
 
-
     return <div
         className={classes.main}
     >
-
         {aboutUsSections.map((item) => {
             return <div
                 className={classes.aboutUsSection}
@@ -60,7 +58,8 @@ const AboutUsSection = () => {
                             element.isActive = false;
                         });
 
-                        _aboutUsSections[currentIndex].isActive = true
+                        _aboutUsSections[currentIndex].isActive = true;
+
                         setAboutUsSection(_aboutUsSections)
                     }
                 }}
@@ -69,7 +68,6 @@ const AboutUsSection = () => {
                     variant="header1"
                     style={{
                         whiteSpace: item.isActive ? "initial" : "nowrap",
-                        //transform: item.isActive ? "rotate(0deg)" : "rotate(90deg)",
                         writingMode: item.isActive ? "initial" : "vertical-lr",
                     }}
                 >
@@ -79,6 +77,7 @@ const AboutUsSection = () => {
                     variant="header6"
                     style={{
                         display: item.isActive ? "block " : "none",
+                        opacity: item.isActive ? 1 : 0,
                     }}
                 >
                     {item.contentText}

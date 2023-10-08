@@ -1,4 +1,3 @@
-//import "../../../../src/fonts/style.css"
 export const colors = {
     "primary":                  "#EF4126",
     "body":                     "#f5f5f5",

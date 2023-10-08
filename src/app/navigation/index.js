@@ -1,3 +1,4 @@
+import Contact from "../pages/contact";
 import Home from "../pages/home";
 import {
     Routes,
@@ -18,6 +19,10 @@ const Navigation = () => {
         <Route
             path="/home"
             element={<Home />}
+        />
+        <Route
+            path="/contact"
+            element={<Contact />}
         />
     </Routes>;
 };

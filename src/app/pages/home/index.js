@@ -30,7 +30,7 @@ const Home = () => {
     <TeamsSection /> 
     <KeywordsSection />
     <SponsorsSection />
-    <GallerySection />
+    {/* <GallerySection /> */}
   </div>
 }
 

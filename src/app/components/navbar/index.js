@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import { Button, Text, useNCoreTheme } from 'ncore-web';
 import logo from "../../../../src/assets/image/components/logo.png"
 import useStyles from './style';
+import { useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => {
     const { spaces, colors } = useNCoreTheme();
     const classes = useStyles();
+
+    const navigate = useNavigate();
 
     const [navbarButtons, setNavbarButtons] = useState([
         {
@@ -96,6 +99,9 @@ const Navbar = () => {
                 textColor='body'
                 title="İletişim"
                 variant="outline"
+                onClick={() => {
+                    navigate("/contact")
+                }}
             />
             <Button
                 textColor='body'
