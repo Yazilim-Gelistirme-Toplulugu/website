@@ -143,36 +143,68 @@ const Footer = () => {
                         to="https://www.instagram.com/ktun.yazilimgelistirme/?hl=tr"
                         target="_blank"
                     >
-                        <InstagramIcon
-                            size={30}
-                            color={colors.body}
+                        <Button
+                            variant="ghost"
+                            title={
+                                <InstagramIcon
+                                    size={30}
+                                    color={colors.body}
+                                />
+                            }
+                            style={{
+                                padding: spaces.inline * 2
+                            }}
                         />
                     </Link>
                     <Link
                         to="https://twitter.com/KTUNYazilimGT"
                         target="_blank"
                     >
-                        <XIcon
-                            size={30}
-                            color={colors.body}
+                        <Button
+                            variant="ghost"
+                            title={
+                                <XIcon
+                                    size={30}
+                                    color={colors.body}
+                                />
+                            }
+                            style={{
+                                padding: spaces.inline * 2
+                            }}
                         />
                     </Link>
                     <Link
                         to="https://www.linkedin.com/company/ktun-yazilimgelistirme/mycompany/"
                         target="_blank"
                     >
-                        <LinkedInIcon
-                            size={30}
-                            color={colors.body}
+                        <Button
+                            variant="ghost"
+                            title={
+                                <LinkedInIcon
+                                    size={30}
+                                    color={colors.body}
+                                />
+                            }
+                            style={{
+                                padding: spaces.inline * 2
+                            }}
                         />
                     </Link>
                     <Link
                         to="http://discord.gg/NgKXpsyatr"
                         target="_blank"
                     >
-                        <DiscordIcon
-                            size={30}
-                            color={colors.body}
+                        <Button
+                            variant="ghost"
+                            title={
+                                <DiscordIcon
+                                    size={30}
+                                    color={colors.body}
+                                />
+                            }
+                            style={{
+                                padding: spaces.inline * 2
+                            }}
                         />
                     </Link>
                 </div>
