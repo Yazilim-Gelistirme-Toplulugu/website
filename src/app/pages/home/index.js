@@ -19,10 +19,6 @@ const Home = () => {
     colors
   } = useNCoreTheme();
 
-  useEffect(() => {
-    console.log(window.location.search)
-  }, [window.location.search])
-
   return <div
     style={{
       display: "flex",
@@ -31,12 +27,12 @@ const Home = () => {
   >
     <Navbar/>
     <MainSection />
-    <AboutUsSection />
+    {/* <AboutUsSection />
     <TeamsSection /> 
     <KeywordsSection />
     <SponsorsSection />
-    <GallerySection />
-    <Footer />
+    <GallerySection /> 
+    <Footer />*/}
   </div>
 }
 

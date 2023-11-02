@@ -1,8 +1,8 @@
-import { Text, useNCoreTheme } from 'ncore-web';
-import React from 'react'
-import mainImage from "../../../../../assets/image/main/main.png"
-import useStyles from './style';
+import mainImage from "../../../../../assets/image/main/main.png";
 import MouseIcon from '../../../../../assets/svgr/mouse';
+import { Text, useNCoreTheme } from 'ncore-web';
+import useStyles from './style';
+import React from 'react';
 
 const MainSection = () => {
 

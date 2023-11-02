@@ -18,12 +18,27 @@ const useStyles = createUseStyles({
         backdropFilter: "blur(5px)",
         //  gap: 40,
     },
+    leftComponent: {
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+    },
+    dropdownMenuBarIcon: {
+        display: "none"
+    },
+    rightComponent: {
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        width: "100%"
+    },
     sectionLinks: {
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        userSelect: "none"
+        userSelect: "none",
+        width: "100%",
     },
     buttonLink: {
         borderRadius: "50px !important",
@@ -37,11 +52,42 @@ const useStyles = createUseStyles({
         display: "flex",
         flexDirection: "row",
         alignItems: "center",
+        whiteSpace: "nowrap"
     },
-    button: {
-        "&:hover": {
-            opacity: 0.8,
-            transition: "0.1s all ease"
+    responsiveHeaderContainer: {
+        display: "none",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between"
+    },
+    "@media only screen and (max-width: 1000px)": {
+        leftComponent: {
+            justifyContent: "space-between",
+            width: "100%",
+        },
+        dropdownMenuBarIcon: {
+            display: "block"
+        },
+        rightComponent: {
+            flexDirection: "column",
+            position: "absolute",
+            backgroundColor: "#021524",
+            top: 0,
+            left: 0,
+            alignSelf: "stretch",
+            boxSizing: "border-box",
+            top: "-400%"
+        },
+        responsiveHeaderContainer: {
+            display: "flex",
+            width: "100%",
+        },
+        sectionLinks: {
+            flexDirection: "column",
+        },
+        buttons: {
+            flexDirection: "column",
+            alignItems: "center",
         }
     }
 })

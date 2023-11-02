@@ -110,6 +110,7 @@ const Footer = () => {
                     src={ygtLogo}
                     alt=""
                     onClick={() => {
+                        navigate("/home");
                         setTimeout(() => {
                             window.open("#main", "_self")
                         }, 250);
