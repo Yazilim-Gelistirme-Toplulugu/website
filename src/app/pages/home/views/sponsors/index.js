@@ -1,14 +1,15 @@
 
-import useStyles from './style';
-import React, { useState } from 'react';
+import nibgatlogo from "../../../../../assets/image/sponsors/nibgatLogo.svg";
 import { Text, useNCoreTheme } from 'ncore-web';
-import nibgatlogo from "../../../../../assets/image/sponsors/nibgatLogo.svg"
+import useStyles from './style';
+import React from 'react';
 
 const SponsorsSection = () => {
     const { colors, spaces } = useNCoreTheme();
     const classes = useStyles();
     return <div
         className={classes.main}
+        id='sponsors'
         style={{
             backgroundColor: "#002039",
             color: colors.body,
@@ -29,7 +30,6 @@ const SponsorsSection = () => {
         </div>
         <div
             className={classes.logo}
-            
         >
             <img
                 src={nibgatlogo}
