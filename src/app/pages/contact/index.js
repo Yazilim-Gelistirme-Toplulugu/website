@@ -54,9 +54,8 @@ const Contact = () => {
                         spreadBehaviour='free'
                         style={{
                             borderRadius: "32px",
-                            background: "#0B3F65",
-                            alignSelf: "stretch"
-                            
+                            alignSelf: "stretch",
+                            backgroundColor: colors.inputAreaColor,
                         }}
                     />
                     <TextInput
@@ -66,8 +65,8 @@ const Contact = () => {
                         spreadBehaviour='free'
                         style={{
                             borderRadius: "32px",
-                            background: "#0B3F65",
-                            alignSelf: "stretch"
+                            alignSelf: "stretch",
+                            backgroundColor: colors.inputAreaColor,
                         }}
                     />
                     <TextInput
@@ -78,7 +77,7 @@ const Contact = () => {
                         spreadBehaviour='free'
                         style={{
                             borderRadius: "32px",
-                            background: "#0B3F65",
+                            backgroundColor: colors.inputAreaColor,
                             alignSelf: "stretch"
                         }}
                     />

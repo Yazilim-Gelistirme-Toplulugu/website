@@ -71,7 +71,6 @@ const useStyles = createUseStyles({
         rightComponent: {
             flexDirection: "column",
             position: "absolute",
-            backgroundColor: "#021524",
             top: 0,
             left: 0,
             alignSelf: "stretch",

@@ -28,11 +28,11 @@ const Home = () => {
     <Navbar/>
     <MainSection />
     <AboutUsSection />
-    {/* <TeamsSection /> 
+    <TeamsSection /> 
     <KeywordsSection />
     <SponsorsSection />
     <GallerySection /> 
-    <Footer />*/}
+    <Footer />
   </div>
 }
 

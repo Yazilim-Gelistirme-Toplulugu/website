@@ -34,6 +34,14 @@ export const colors = {
     "gray100":                   "hsl(0, 0%, 8%)",
     "modalBackground":           "rgba(0, 0, 0, 0.5)",
     "backgroundColor":           "#021524",
+    "footerBackground":          "#9C2707",
+    "inputAreaColor":            "#0B3F65",
+    "aboutUsBox1":               "#0B3F65",
+    "aboutUsBox2":               "#021524",
+    "aboutUsBox3":               "#042137",
+    "aboutUsBox4":               "#094F82",
+    "sponsorsBackground":        "#002039",
+
 };
 
 export const typography = {

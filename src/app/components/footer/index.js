@@ -50,7 +50,7 @@ const Footer = () => {
             paddingRight: spaces.inline * 18,
             paddingBottom: spaces.inline * 3,
             gap: spaces.inline * 12,
-            backgroundColor: colors.footer,
+            backgroundColor: colors.backgroundColor,
         }}
     >
         <div

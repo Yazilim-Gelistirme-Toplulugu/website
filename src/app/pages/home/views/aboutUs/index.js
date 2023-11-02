@@ -13,25 +13,25 @@ const AboutUsSection = () => {
             title: "Biz Kimiz ?",
             contentText: "Konya Teknik Üniversitesi Yazılım Geliştirme Topluluğu, bilgisayar ve yazılım mühendisliği öğrencileri tarafından 2022'de kuruldu. Web ve mobil alanına ilgi duyan öğrencilerin çalışma grupları kurarak bilgi alışverişi yaptıkları ve bu alanda kendilerini geliştirdikleri bir topluluktur. Aynı zamanda konuda uzman kişiler tarafından verilen seminerlerle bilgi birikimini attıran etkinlikler yapmaktadır.",
             isActive: false,
-            backgraundColor: "#0B3F65",
+            backgroundColor: "aboutUsBox1",
         },
         {
             title: "Neler Yaparız ?",
             contentText: "Web ve mobil alanında ayrı ayrı olmak üzere çalışma grupları oluşturulmaktadır. Bu çalışma grupları ile bilgi birikimini arttırmak amacıyla çeşitli ödevlendirmeler ve dersler verilmektedir. Aynı zamanda bilgi ve tecrübelerini bizlerle paylaşması için konuda uzman kişiler tarafından seminerler düzenlenmektedir. Sadece bilgi içerikli değil aynı zamanda sosyal anlamda tanışmak ve kaynaşmak amacıyla çeşitli etkinlikler yapılmaktadır.",
             isActive: true,
-            backgraundColor: "#021524",
+            backgroundColor: "aboutUsBox2",
         },
         {
             title: "Neden Biz ?",
             contentText: "Yazılım Geliştirme Topluluğu, gerek yazılım alanında kendinizi geliştirebileceğiniz gerekse sosyal anlamda güzel arkadaşlıklar kurabileceğiniz bir ortam sunar. Birlikte yapacağımız projeler ile CV'nize ekleyebileceğiniz birçok tecrübe kazanabilirsiniz. Bu projeler ve çalışmalar ile daha aktif ve verimli üniversite yılları geçirebilirsiniz.",
             isActive: false,
-            backgraundColor: "#042137",
+            backgroundColor: "aboutUsBox3",
         },
         {
             title: "Bize Katıl !",
             contentText: "Web site ve mobil uygulama geliştirme öğrenmek istiyorsan veya alanında deneyimliysen, yeteneklerin ve hedeflerin doğrultusunda değerlendirebileceğin tüm fırsatlar Yazılım Geliştirme Topluluğu'nda seni bekliyor.",
             isActive: false,
-            backgraundColor: "#094F82",
+            backgroundColor: "aboutUsBox4",
         },
 
     ])
@@ -47,7 +47,7 @@ const AboutUsSection = () => {
                 className={classes.aboutUsSection}
                 style={{
                     width: item.isActive ? "49%" : "17%",
-                    background: item.backgraundColor,
+                    background: colors[item.backgroundColor],
                     color: colors.body,
                     padding: spaces.container * 3,
                     gap: spaces.item * 2
