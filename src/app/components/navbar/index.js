@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import CloseIcon from '../../../assets/svgr/close';
 import DropdownMenuBarIcon from '../../../assets/svgr/dropdownMenuBar';
+import { UYE_ALIM_LINK } from '../../constants';
 
 const Navbar = () => {
     const { spaces, colors } = useNCoreTheme();
@@ -161,7 +162,7 @@ const Navbar = () => {
                     }}
                 />
                 <Link
-                    to="https://docs.google.com/forms/d/e/1FAIpQLSdo7ylOulj-Oa3HydpB8tppgShYSQXXJdHhEpy8vmcAp2XiKg/viewform"
+                    to={UYE_ALIM_LINK}
                     target="_blank"
                     style={{
                         textDecoration: "none"

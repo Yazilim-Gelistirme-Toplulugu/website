@@ -2,6 +2,7 @@
 import useStyles from './style';
 import React, { useState } from 'react';
 import { Button, Text, useNCoreTheme } from 'ncore-web';
+import { UYE_ALIM_LINK } from '../../../../constants';
 
 const AboutUsSection = () => {
     const { colors, spaces } = useNCoreTheme();
@@ -89,6 +90,9 @@ const AboutUsSection = () => {
                             spreadBehaviour='free'
                             textColor='body'
                             title="Bize Katılın"
+                            onClick={() => {
+                                window.open(UYE_ALIM_LINK, "_blank");
+                            }}
                         />
                         :
                         null
