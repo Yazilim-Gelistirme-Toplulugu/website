@@ -20,6 +20,7 @@ const useStyles = createUseStyles({
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "flex-start",
+        width: "190px",
     },
     logos: {
         display: "flex",
@@ -37,6 +38,12 @@ const useStyles = createUseStyles({
         width: "190px",
         justifyContent: "space-between",
         alignItems: "center",
+    },
+    button: {
+        "&:hover": {
+            opacity: 0.8,
+            transition: "0.1s all ease"
+        }
     }
 })
 export default useStyles;

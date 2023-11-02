@@ -50,7 +50,7 @@ const Contact = () => {
                     <TextInput
                         title='İsim Soyisim'
                         placeholder='İsim Soyisim'
-                        isRequired //false olmasına ragmen * ile gösteriliyor
+                        isRequired 
                         spreadBehaviour='free'
                         style={{
                             borderRadius: "32px",

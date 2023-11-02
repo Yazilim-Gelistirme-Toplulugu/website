@@ -43,6 +43,7 @@ const Navbar = () => {
     >
         <div>
             <img
+                className={classes.button}
                 src={logo}
                 alt=""
                 onClick={() => {

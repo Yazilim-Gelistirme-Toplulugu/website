@@ -18,7 +18,7 @@ const useStyles = createUseStyles({
         gap: "32px",
         borderRadius: "32px",
         border: "3px solid #0B3F65",
-        background: "rgba(11, 63, 101, 0.40)",
+        background: "rgba(11, 63, 101, 0.20)",
         backdropFilter: "blur(10px)",
     },
     inputArea: {

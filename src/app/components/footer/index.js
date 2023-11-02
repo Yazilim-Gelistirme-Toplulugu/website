@@ -106,6 +106,7 @@ const Footer = () => {
                 }}
             >
                 <img
+                    className={classes.button}
                     src={ygtLogo}
                     alt=""
                     onClick={() => {
@@ -119,6 +120,7 @@ const Footer = () => {
                     target="_blank"
                 >
                     <img
+                        className={classes.button}
                         src={ktunLogo}
                         alt=""
                     />
@@ -138,73 +140,48 @@ const Footer = () => {
                 </Text>
                 <div
                     className={classes.socialMediaIcons}
+                    style={{
+                        gap: spaces.inline * 1,
+                    }}
                 >
                     <Link
                         to="https://www.instagram.com/ktun.yazilimgelistirme/?hl=tr"
                         target="_blank"
                     >
-                        <Button
-                            variant="ghost"
-                            title={
-                                <InstagramIcon
-                                    size={30}
-                                    color={colors.body}
-                                />
-                            }
-                            style={{
-                                padding: spaces.inline * 2
-                            }}
+                        <InstagramIcon
+                            className={classes.button}
+                            size={30}
+                            color={colors.body}
                         />
                     </Link>
                     <Link
                         to="https://twitter.com/KTUNYazilimGT"
                         target="_blank"
                     >
-                        <Button
-                            variant="ghost"
-                            title={
-                                <XIcon
-                                    size={30}
-                                    color={colors.body}
-                                />
-                            }
-                            style={{
-                                padding: spaces.inline * 2
-                            }}
+                        <XIcon
+                            className={classes.button}
+                            size={30}
+                            color={colors.body}
                         />
                     </Link>
                     <Link
                         to="https://www.linkedin.com/company/ktun-yazilimgelistirme/mycompany/"
                         target="_blank"
                     >
-                        <Button
-                            variant="ghost"
-                            title={
-                                <LinkedInIcon
-                                    size={30}
-                                    color={colors.body}
-                                />
-                            }
-                            style={{
-                                padding: spaces.inline * 2
-                            }}
+                        <LinkedInIcon
+                            className={classes.button}
+                            size={30}
+                            color={colors.body}
                         />
                     </Link>
                     <Link
                         to="http://discord.gg/NgKXpsyatr"
                         target="_blank"
                     >
-                        <Button
-                            variant="ghost"
-                            title={
-                                <DiscordIcon
-                                    size={30}
-                                    color={colors.body}
-                                />
-                            }
-                            style={{
-                                padding: spaces.inline * 2
-                            }}
+                        <DiscordIcon
+                            className={classes.button}
+                            size={30}
+                            color={colors.body}
                         />
                     </Link>
                 </div>

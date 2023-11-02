@@ -16,7 +16,7 @@ const useStyles = createUseStyles({
         background: "rgba(0, 0, 0, 0.30)",
         boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
         backdropFilter: "blur(5px)",
-      //  gap: 40,
+        //  gap: 40,
     },
     sectionLinks: {
         display: "flex",
@@ -30,13 +30,19 @@ const useStyles = createUseStyles({
         padding: "0px !important",
         margin: "0px !important",
     },
-    activeLink:{
+    activeLink: {
         //zIndex: -1,
     },
     buttons: {
         display: "flex",
         flexDirection: "row",
         alignItems: "center",
+    },
+    button: {
+        "&:hover": {
+            opacity: 0.8,
+            transition: "0.1s all ease"
+        }
     }
 })
 export default useStyles;
