@@ -16,8 +16,22 @@ const useStyles = createUseStyles({
         textAlign: "center",
         display: "flex",
         flexDirection: "column",
-        height:"60vh",
+        height: "60vh",
         cursor: "pointer",
     },
+    "@media only screen and (max-width: 1000px)": {
+        main: {
+            flexDirection: "column",
+        },
+        aboutUsSection: {
+            width: "100% !important",
+            boxSizing: "border-box",
+            height: "auto !important",
+            "& span": {
+                whiteSpace: "initial !important",
+                writingMode: "initial !important"
+            }
+        }
+    }
 })
 export default useStyles;

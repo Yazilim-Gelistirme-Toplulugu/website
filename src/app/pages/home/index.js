@@ -27,8 +27,8 @@ const Home = () => {
   >
     <Navbar/>
     <MainSection />
-    {/* <AboutUsSection />
-    <TeamsSection /> 
+    <AboutUsSection />
+    {/* <TeamsSection /> 
     <KeywordsSection />
     <SponsorsSection />
     <GallerySection /> 

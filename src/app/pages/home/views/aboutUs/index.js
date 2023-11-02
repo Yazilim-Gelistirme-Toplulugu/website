@@ -70,7 +70,6 @@ const AboutUsSection = () => {
                     variant="header1"
                     style={{
                         whiteSpace: item.isActive ? "initial" : "nowrap",
-                        //transform: item.isActive ? "rotate(0deg)" : "rotate(90deg)",
                         writingMode: item.isActive ? "initial" : "vertical-lr",
                     }}
                 >
