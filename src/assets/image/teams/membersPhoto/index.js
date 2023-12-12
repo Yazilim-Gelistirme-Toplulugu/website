@@ -70,3 +70,15 @@ export {
 export {
     default as zehra 
 } from "./zehra.png"
+
+export {
+    default as baiysh 
+} from "./baiysh.png"
+
+export {
+    default as hafsa 
+} from "./hafsa.png"
+
+export {
+    default as ayse 
+} from "./ayse.png"
