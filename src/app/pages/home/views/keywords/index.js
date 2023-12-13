@@ -6,7 +6,7 @@ import { Text, useNCoreTheme } from 'ncore-web';
 const KeywordsSection = () => {
     const { colors, spaces } = useNCoreTheme();
     const classes = useStyles();
-    const keywords = ["HTML", "CSS", "JavaScript", "React", "React-Native", "Node.js", "No Sql", "Java", "C#"];
+    const keywords = ["HTML", "CSS", "JavaScript", "React", "React-Native", "Node.js", "No Sql", "Java", "C#", "Unity", ".Net", ".Net Core"];
 
     useEffect(() => {
         const keywordLeft = document.querySelectorAll(".keywordLeft")
