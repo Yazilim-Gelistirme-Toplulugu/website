@@ -11,25 +11,25 @@ const AboutUsSection = () => {
     const [aboutUsSections, setAboutUsSection] = useState([
         {
             title: "Biz Kimiz ?",
-            contentText: "Konya Teknik Üniversitesi Yazılım Geliştirme Topluluğu, bilgisayar ve yazılım mühendisliği öğrencileri tarafından 2022'de kuruldu. Web ve mobil alanına ilgi duyan öğrencilerin çalışma grupları kurarak bilgi alışverişi yaptıkları ve bu alanda kendilerini geliştirdikleri bir topluluktur. Aynı zamanda konuda uzman kişiler tarafından verilen seminerlerle bilgi birikimini attıran etkinlikler yapmaktadır.",
+            contentText: "Konya Teknik Üniversitesi Yazılım Geliştirme Topluluğu, bilgisayar ve yazılım mühendisliği öğrencileri tarafından 2022 yılında kurulmuştur. Bu topluluk, web, mobil ve oyun alanlarına ilgi duyan öğrencilerin bir araya gelerek çalışma grupları oluşturdukları, bilgi alışverişinde bulundukları ve kendilerini bu alanlarda geliştirdikleri bir platformdur. Aynı zamanda, konuda uzman kişiler tarafından düzenlenen seminerlerle üyelerine bilgi birikimini artırma fırsatı sunmaktadır.",
             isActive: false,
             backgroundColor: "aboutUsBox1",
         },
         {
             title: "Neler Yaparız ?",
-            contentText: "Web ve mobil alanında ayrı ayrı olmak üzere çalışma grupları oluşturulmaktadır. Bu çalışma grupları ile bilgi birikimini arttırmak amacıyla çeşitli ödevlendirmeler ve dersler verilmektedir. Aynı zamanda bilgi ve tecrübelerini bizlerle paylaşması için konuda uzman kişiler tarafından seminerler düzenlenmektedir. Sadece bilgi içerikli değil aynı zamanda sosyal anlamda tanışmak ve kaynaşmak amacıyla çeşitli etkinlikler yapılmaktadır.",
+            contentText: "Web, mobil ve oyun alanlarında ayrı ayrı çalışma grupları oluşturulmaktadır. Bu gruplar, üyelerin bilgi birikimini artırmak amacıyla çeşitli ödevlendirmeler ve derslerle desteklenmektedir. Aynı zamanda, konuda uzman kişiler tarafından düzenlenen seminerlerle üyeler, bilgi ve tecrübeleri ile buluşma ve paylaşma fırsatı elde etmektedir. Topluluk, sadece bilgi odaklı değil, aynı zamanda sosyal açıdan da bir araya gelmeyi ve kaynaşmayı amaçlayan çeşitli etkinliklere de ev sahipliği yapmaktadır.",
             isActive: true,
             backgroundColor: "aboutUsBox2",
         },
         {
             title: "Neden Biz ?",
-            contentText: "Yazılım Geliştirme Topluluğu, gerek yazılım alanında kendinizi geliştirebileceğiniz gerekse sosyal anlamda güzel arkadaşlıklar kurabileceğiniz bir ortam sunar. Birlikte yapacağımız projeler ile CV'nize ekleyebileceğiniz birçok tecrübe kazanabilirsiniz. Bu projeler ve çalışmalar ile daha aktif ve verimli üniversite yılları geçirebilirsiniz.",
+            contentText: "Yazılım Geliştirme Topluluğu, sadece yazılım alanında kendinizi geliştirmenize değil, aynı zamanda sosyal açıdan güzel arkadaşlıklar kurabileceğiniz bir ortam sunmaktadır. Birlikte gerçekleştireceğimiz projelerle CV'nize ekleyebileceğiniz birçok tecrübe kazanma fırsatı bulabilirsiniz. Bu projeler ve çalışmalar, üniversite yıllarınızı daha aktif ve verimli geçirmenize olanak tanır.",
             isActive: false,
             backgroundColor: "aboutUsBox3",
         },
         {
             title: "Bize Katıl !",
-            contentText: "Web site ve mobil uygulama geliştirme öğrenmek istiyorsan veya alanında deneyimliysen, yeteneklerin ve hedeflerin doğrultusunda değerlendirebileceğin tüm fırsatlar Yazılım Geliştirme Topluluğu'nda seni bekliyor.",
+            contentText: "Web sitesi ve mobil uygulama geliştirmeyi öğrenmek istiyorsan veya bu alanda deneyime sahipsen, yeteneklerin ve hedeflerin doğrultusunda değerlendirebileceğin birçok fırsat, Yazılım Geliştirme Topluluğu'nda seni bekliyor.",
             isActive: false,
             backgroundColor: "aboutUsBox4",
         },

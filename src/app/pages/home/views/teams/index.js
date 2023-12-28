@@ -130,7 +130,7 @@ const TeamsSection = () => {
         {
             id: 15,
             fullName: "Nisa Peri Aksoy",
-            duty: "Sosyal Medya Ekip Üyesi",
+            duty: "Yönetim Kurulu Üyesi",
             photo: saziye,
         },
         {
