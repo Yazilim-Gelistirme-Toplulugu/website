@@ -1,13 +1,12 @@
 import mainImage from "../../../../../assets/image/main/main.png";
 import MouseIcon from '../../../../../assets/svgr/mouse';
-import { Text, useNCoreTheme } from 'ncore-web';
+import { Text, useNCoreTheme, Button } from 'ncore-web';
 import useStyles from './style';
 import React from 'react';
 
 const MainSection = () => {
 
     const classes = useStyles();
-
     const {
         spaces,
         colors
@@ -47,7 +46,20 @@ const MainSection = () => {
             </Text>
         </div>
         <div className={classes.mouse}>
-            <MouseIcon size={60} color={colors.orange} />
+            <Button
+                textColor='body'
+                title={
+                    <MouseIcon size={60}
+                        color={colors.orange}
+                    />}
+                variant="ghost"
+                spreadBehaviour='stretch'
+                onClick={() => {
+                    setTimeout(() => {
+                        window.open("#aboutUs", "_self")
+                    }, 250);
+                }}
+            />
         </div>
     </div>
 }
