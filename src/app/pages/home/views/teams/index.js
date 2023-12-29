@@ -22,7 +22,14 @@ import {
     zehra,
     baiysh,
     hafsa,
-    ayse
+    ayse,
+    burak,
+    busranur,
+    ozkan,
+    ilayda,
+    nisaPeri,
+    dilay,
+    keziban,
 } from '../../../../../assets/image/teams/membersPhoto/index';
 import TeamMember from './components';
 import { Carousel } from 'react-responsive-carousel';
@@ -41,7 +48,7 @@ const TeamsSection = () => {
             id: 0,
             fullName: "Burak Aslan",
             duty: "Yönetim Kurulu Başkanı",
-            photo: saziye,
+            photo: burak,
         },
         {
             id: 1,
@@ -85,12 +92,12 @@ const TeamsSection = () => {
             duty: "Yönetim Kurulu Üyesi",
             photo: ayse,
         },
-        {
+       /* {
             id: 8,
             fullName: "Talha Suna",
             duty: "Yönetim Kurulu Üyesi",
             photo: saziye,
-        },
+        },*/
         {
             id: 9,
             fullName: "Baiysh Sabirzhanov",
@@ -101,7 +108,7 @@ const TeamsSection = () => {
             id: 10,
             fullName: "Büşranur Şaşmaz",
             duty: "Yönetim Kurulu Üyesi",
-            photo: saziye,
+            photo: busranur,
         },
         {
             id: 11,
@@ -125,13 +132,13 @@ const TeamsSection = () => {
             id: 14,
             fullName: "Keziban Karaoğlu",
             duty: "Yönetim Kurulu Üyesi",
-            photo: saziye,
+            photo: keziban,
         },
         {
             id: 15,
             fullName: "Nisa Peri Aksoy",
             duty: "Yönetim Kurulu Üyesi",
-            photo: saziye,
+            photo: nisaPeri,
         },
         {
             id: 16,
@@ -139,35 +146,35 @@ const TeamsSection = () => {
             duty: "Sosyal Medya Ekip Üyesi",
             photo: sevinc,
         },
-        {
+      /*  {
             id: 17,
             fullName: "Feyza Ece Uras",
             duty: "Sosyal Medya Ekip Üyesi",
             photo: saziye,
-        },
+        },*/
         {
             id: 18,
             fullName: "Dilay Uluergüven",
             duty: "Tasarım Ekip Üyesi",
-            photo: saziye,
+            photo: dilay,
         },
         {
             id: 19,
             fullName: "Özkan Sarı",
             duty: "Video-Edit Ekip Üyesi",
-            photo: saziye,
+            photo: ozkan,
         },
-        {
+      /*  {
             id: 20,
             fullName: "Nida Kaplan",
             duty: "Video-Edit Ekip Üyesi",
             photo: saziye,
-        },
+        },*/
         {
             id: 21,
             fullName: "İlayda Cirit",
             duty: "Etkinlik-Organizasyon Ekip Üyesi",
-            photo: saziye,
+            photo: ilayda,
         },
         {
             id: 22,
@@ -175,18 +182,18 @@ const TeamsSection = () => {
             duty: "Etkinlik-Organizasyon Ekip Üyesi",
             photo: alihaydar,
         },
-        {
+       /* {
             id: 23,
             fullName: "Emir Arslan",
             duty: "Etkinlik-Organizasyon Ekip Üyesi",
             photo: saziye,
-        },
-        {
+        },*/
+      /*  {
             id: 24,
             fullName: "Furkan Kılıç",
             duty: "Etkinlik-Organizasyon Ekip Üyesi",
             photo: saziye,
-        },
+        },*/
         {
             id: 25,
             fullName: "İrem Demir",

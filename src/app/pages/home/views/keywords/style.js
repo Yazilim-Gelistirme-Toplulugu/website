@@ -16,7 +16,6 @@ const useStyles = createUseStyles({
     keyword: {
         display: "inline-block",
         width: "180px",
-        flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
         boxShadow: " 0px 0px 8px 0px #EF4126",

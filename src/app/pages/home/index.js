@@ -31,7 +31,6 @@ const Home = () => {
     <TeamsSection /> 
     <KeywordsSection />
     <SponsorsSection />
-    <GallerySection /> 
     <Footer />
   </div>
 }

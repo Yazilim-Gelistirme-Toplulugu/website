@@ -82,3 +82,32 @@ export {
 export {
     default as ayse 
 } from "./ayse.png"
+
+export {
+    default as burak 
+} from "./burak.png"
+
+export {
+    default as ozkan 
+} from "./ozkan.png"
+
+export {
+    default as busranur 
+} from "./busranur.png"
+
+export {
+    default as ilayda 
+} from "./ilayda.png"
+
+export {
+    default as nisaPeri 
+} from "./nisaPeri.png"
+
+export {
+    default as dilay 
+} from "./dilay.png"
+
+export {
+    default as keziban 
+} from "./keziban.png"
+
