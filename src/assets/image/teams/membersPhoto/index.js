@@ -111,3 +111,14 @@ export {
     default as keziban 
 } from "./keziban.png"
 
+export {
+    default as nevra 
+} from "./nevra.png"
+
+export {
+    default as nisa 
+} from "./nisa.png"
+
+export {
+    default as sami 
+} from "./sami.png"

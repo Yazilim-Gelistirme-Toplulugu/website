@@ -22,7 +22,8 @@ const Home = () => {
   return <div
     style={{
       display: "flex",
-      flexDirection: "column"
+      flexDirection: "column",
+      overflowX: "hidden",
     }}
   >
     <Navbar/>

@@ -16,11 +16,6 @@ const TeamMember = ({
         className={classes.container}
         style={{
             background: `url(${photo})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            height: 250,
-            width: 250,
         }}
     >
         <div

@@ -30,6 +30,8 @@ import {
     nisaPeri,
     dilay,
     keziban,
+    nevra,
+    sami
 } from '../../../../../assets/image/teams/membersPhoto/index';
 import TeamMember from './components';
 import { Carousel } from 'react-responsive-carousel';
@@ -46,21 +48,21 @@ const TeamsSection = () => {
     const members = [
         {
             id: 0,
-            fullName: "Burak Aslan",
-            duty: "Yönetim Kurulu Başkanı",
-            photo: burak,
-        },
-        {
-            id: 1,
             fullName: "Şaziye Dağ",
-            duty: "Yönetim Kurulu Başkan Yardımcısı",
+            duty: "Yönetim Kurulu Başkanı",
             photo: saziye,
         },
         {
-            id: 2,
-            fullName: "Hafsa İrem Çelik",
+            id: 1,
+            fullName: "Mehmet Konukçu",
             duty: "Yönetim Kurulu Başkan Yardımcısı",
-            photo: hafsa,
+            photo: mehmet,
+        },
+        {
+            id: 2,
+            fullName: "Ömer Şahin",
+            duty: "Yönetim Kurulu Başkan Yardımcısı",
+            photo: omer,
         },
         {
             id: 3,
@@ -92,12 +94,12 @@ const TeamsSection = () => {
             duty: "Yönetim Kurulu Üyesi",
             photo: ayse,
         },
-       /* {
-            id: 8,
-            fullName: "Talha Suna",
-            duty: "Yönetim Kurulu Üyesi",
-            photo: saziye,
-        },*/
+        /* {
+             id: 8,
+             fullName: "Talha Suna",
+             duty: "Yönetim Kurulu Üyesi",
+             photo: saziye,
+         },*/
         {
             id: 9,
             fullName: "Baiysh Sabirzhanov",
@@ -118,15 +120,15 @@ const TeamsSection = () => {
         },
         {
             id: 12,
-            fullName: "Mehmet Konukçu",
+            fullName: "Nevra Nur Doğan",
             duty: "Yönetim Kurulu Üyesi",
-            photo: mehmet,
+            photo: nevra,
         },
         {
             id: 13,
-            fullName: "Ömer Şahin",
+            fullName: "Sami Aksoy",
             duty: "Yönetim Kurulu Üyesi",
-            photo: omer,
+            photo: sami,
         },
         {
             id: 14,
@@ -146,12 +148,12 @@ const TeamsSection = () => {
             duty: "Sosyal Medya Ekip Üyesi",
             photo: sevinc,
         },
-      /*  {
-            id: 17,
-            fullName: "Feyza Ece Uras",
-            duty: "Sosyal Medya Ekip Üyesi",
-            photo: saziye,
-        },*/
+        /*  {
+              id: 17,
+              fullName: "Feyza Ece Uras",
+              duty: "Sosyal Medya Ekip Üyesi",
+              photo: saziye,
+          },*/
         {
             id: 18,
             fullName: "Dilay Uluergüven",
@@ -164,12 +166,12 @@ const TeamsSection = () => {
             duty: "Video-Edit Ekip Üyesi",
             photo: ozkan,
         },
-      /*  {
-            id: 20,
-            fullName: "Nida Kaplan",
-            duty: "Video-Edit Ekip Üyesi",
-            photo: saziye,
-        },*/
+        /*  {
+              id: 20,
+              fullName: "Nida Kaplan",
+              duty: "Video-Edit Ekip Üyesi",
+              photo: saziye,
+          },*/
         {
             id: 21,
             fullName: "İlayda Cirit",
@@ -182,18 +184,18 @@ const TeamsSection = () => {
             duty: "Etkinlik-Organizasyon Ekip Üyesi",
             photo: alihaydar,
         },
-       /* {
-            id: 23,
-            fullName: "Emir Arslan",
-            duty: "Etkinlik-Organizasyon Ekip Üyesi",
-            photo: saziye,
-        },*/
-      /*  {
-            id: 24,
-            fullName: "Furkan Kılıç",
-            duty: "Etkinlik-Organizasyon Ekip Üyesi",
-            photo: saziye,
-        },*/
+        /* {
+             id: 23,
+             fullName: "Emir Arslan",
+             duty: "Etkinlik-Organizasyon Ekip Üyesi",
+             photo: saziye,
+         },*/
+        /*  {
+              id: 24,
+              fullName: "Furkan Kılıç",
+              duty: "Etkinlik-Organizasyon Ekip Üyesi",
+              photo: saziye,
+          },*/
         {
             id: 25,
             fullName: "İrem Demir",
@@ -242,28 +244,41 @@ const TeamsSection = () => {
             duty: "Topluluk Üyesi",
             photo: cennet,
         },
+        {
+            id: 33,
+            fullName: "Hafsa İrem Çelik",
+            duty: "Topluluk Üyesi",
+            photo: hafsa,
+        },
+        {
+            id: 34,
+            fullName: "Burak Aslan",
+            duty: "Topluluk Üyesi",
+            photo: burak,
+        },
     ];
 
     const splitMembers = () => {
+        const isSmallScreen = window.innerWidth < 800; // Örneğin, ekran genişliği 600 pikselden küçükse "küçük ekran" kabul ediyoruz.
+        console.log(window.innerWidth);
         let startIndex = 0;
         let splitedMembers = [];
         let i = 0;
-
+        const membersPerPage = isSmallScreen ? 4 : 6;
+      
         while (i < members.length) {
-
-            let partMembers = [];
-
-            for (i = startIndex; i < startIndex + 6 && i < members.length; i++) {
-                partMembers.push(members[i])
-            }
-
-            splitedMembers.push(partMembers)
-            startIndex += 6;
-
+          let partMembers = [];
+      
+          for (i = startIndex; i < startIndex + membersPerPage && i < members.length; i++) {
+            partMembers.push(members[i]);
+          }
+      
+          splitedMembers.push(partMembers);
+          startIndex += membersPerPage;
         }
-
+        
         return splitedMembers;
-    }
+      };
 
     const renderTeamsSection = () => {
 
@@ -271,10 +286,10 @@ const TeamsSection = () => {
             showStatus={false}
             showArrows={false}
             showThumbs={false}
-            autoPlay={true}
-            interval={3000}
-            infiniteLoop={true}
             emulateTouch={true}
+            interval={3000}
+            autoPlay={true}
+            infiniteLoop={true}  
         >
             {
                 splitMembers().map((item) => {

@@ -8,7 +8,17 @@ const useStyles = createUseStyles({
         "&:hover > div": {
             backgroundColor: "rgba(2, 21, 36, .6)",
             opacity: 1
-        }
+        },
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        height: "250px",
+        width: "250px",
+        '@media (max-width: 900px)': {
+            height: "200px",
+            width: "200px",
+        },
+
     },
     content: {
         opacity: 0,

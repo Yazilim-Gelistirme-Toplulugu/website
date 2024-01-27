@@ -4,7 +4,6 @@ const useStyles = createUseStyles({
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        overflow: "hidden",
     },
     keywordsContainer: {
         display: "flex",
@@ -15,12 +14,12 @@ const useStyles = createUseStyles({
     },
     keyword: {
         display: "inline-block",
-        width: "180px",
         alignItems: "center",
         textAlign: "center",
         boxShadow: " 0px 0px 8px 0px #EF4126",
         position: "relative",
-        transition: "none"
+        transition: "none",
+        minWidth: "120px",
     },
 })
 export default useStyles;
