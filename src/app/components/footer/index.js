@@ -8,6 +8,7 @@ import InstagramIcon from '../../../assets/svgr/instagram/index.js';
 import LinkedInIcon from '../../../assets/svgr/linkedIn/index.js';
 import XIcon from '../../../assets/svgr/x/index.js';
 import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
     const { spaces, colors } = useNCoreTheme();

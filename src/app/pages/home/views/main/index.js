@@ -3,10 +3,12 @@ import MouseIcon from '../../../../../assets/svgr/mouse';
 import { Text, useNCoreTheme, Button } from 'ncore-web';
 import useStyles from './style';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const MainSection = () => {
 
     const classes = useStyles();
+    const navigate = useNavigate();
     const {
         spaces,
         colors
