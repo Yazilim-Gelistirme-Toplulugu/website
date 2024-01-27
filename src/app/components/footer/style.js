@@ -13,6 +13,9 @@ const useStyles = createUseStyles({
         justifyContent: "space-between",
         alignItems: "center",
         alignSelf: "stretch",
+        '@media (max-width: 900px)': {
+            justifyContent: "center",
+        },
     },
     sectionLinks: {
         display: "flex",
@@ -20,11 +23,17 @@ const useStyles = createUseStyles({
         justifyContent: "center",
         alignItems: "flex-start",
         width: "190px",
+        '@media (max-width: 900px)': {
+           display: "none"
+        },
     },
     logos: {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
+        '@media (max-width: 900px)': {
+           display: "none"
+        },
     },
     followus: {
         display: "flex",

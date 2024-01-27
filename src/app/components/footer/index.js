@@ -55,6 +55,8 @@ const Footer = () => {
     >
         <div
             className={classes.content}
+            style={{
+            }}
         >
             <div
                 className={classes.sectionLinks}
@@ -191,6 +193,9 @@ const Footer = () => {
         <Text
             color='body'
             variant='copyright'
+            style={{
+                textAlign:"center"
+            }}
         >
             Telif Hakkı © 2023 Yazılım Geliştirme Topluluğu - Tüm Hakları Saklıdır.
         </Text>

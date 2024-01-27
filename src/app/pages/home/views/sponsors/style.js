@@ -11,6 +11,9 @@ const useStyles = createUseStyles({
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        '& img': {
+            width: "100px"
+        },
     },
 
 
