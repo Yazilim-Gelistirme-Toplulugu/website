@@ -15,21 +15,24 @@ const useStyles = createUseStyles({
     sliderContainer: {
         display: "flex",
         flexDirection: "row",
-        flexWrap: "wrap",
         justifyContent: "center",
         alignItems: "center",
     },
     sliderItem: {
         display: "flex",
         flexDirection: "row",
-        flexWrap: "wrap",
         justifyContent: "center",
         alignItems: "center",
         flexFlow: "row wrap",
-        width: "100%",
         height: "100%",
         maxWidth: 800,
-        margin: "auto"
+        margin: "auto",
+        '@media (max-width:600px)':{
+            maxWidth: 600,
+        },
+        '@media (max-width:1000px)':{
+            maxWidth: 700,
+        }
     }
 })
 export default useStyles;

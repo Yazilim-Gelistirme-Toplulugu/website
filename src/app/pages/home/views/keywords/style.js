@@ -16,6 +16,7 @@ const useStyles = createUseStyles({
         display: "inline-block",
         alignItems: "center",
         textAlign: "center",
+        justifyContent: "center",
         boxShadow: " 0px 0px 8px 0px #EF4126",
         position: "relative",
         transition: "none",

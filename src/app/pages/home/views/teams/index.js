@@ -258,27 +258,30 @@ const TeamsSection = () => {
         },
     ];
 
-    const splitMembers = () => {
-        const isSmallScreen = window.innerWidth < 800; // Örneğin, ekran genişliği 600 pikselden küçükse "küçük ekran" kabul ediyoruz.
-        console.log(window.innerWidth);
+    let splitMembers = () => {
         let startIndex = 0;
         let splitedMembers = [];
         let i = 0;
-        const membersPerPage = isSmallScreen ? 4 : 6;
-      
+        let membersPerPage = //sayfanın yanllızca açılış değerini alıyor büyüme küçülme durumlarında değişmiyor
+            window.innerWidth <= 600
+                ? 1
+                : window.innerWidth <= 1000
+                    ? 4
+                    : 6;
+
         while (i < members.length) {
-          let partMembers = [];
-      
-          for (i = startIndex; i < startIndex + membersPerPage && i < members.length; i++) {
-            partMembers.push(members[i]);
-          }
-      
-          splitedMembers.push(partMembers);
-          startIndex += membersPerPage;
+            let partMembers = [];
+
+            for (i = startIndex; i < startIndex + membersPerPage && i < members.length; i++) {
+                partMembers.push(members[i]);
+            }
+
+            splitedMembers.push(partMembers);
+            startIndex += membersPerPage;
         }
-        
+
         return splitedMembers;
-      };
+    };
 
     const renderTeamsSection = () => {
 
@@ -289,7 +292,7 @@ const TeamsSection = () => {
             emulateTouch={true}
             interval={3000}
             autoPlay={true}
-            infiniteLoop={true}  
+            infiniteLoop={true}
         >
             {
                 splitMembers().map((item) => {

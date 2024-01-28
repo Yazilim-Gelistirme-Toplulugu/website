@@ -45,6 +45,11 @@ const KeywordsSection = () => {
         }, 30);
     }
 
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 500);
+    window.addEventListener('resize', () => {
+        setIsSmallScreen(window.innerWidth <= 500);
+    });
+
     return <div
         className={classes.container}
         style={{
@@ -73,7 +78,7 @@ const KeywordsSection = () => {
                     >
                         <Text
                             color='body'
-                            variant='body'
+                            variant={isSmallScreen ? 'caption' : 'body'}
                         >
                             {item}
                         </Text>
