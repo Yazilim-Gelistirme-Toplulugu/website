@@ -96,7 +96,8 @@ const Navbar = () => {
             ref={rightComponentRef}
             style={{
                 gap: spaces.item,
-                padding: spaces.container
+                padding: spaces.container,
+                backgroundColor: colors.inputAreaColor
             }}
         >
             {renderResponsiveHeader()}

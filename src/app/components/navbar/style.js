@@ -75,7 +75,6 @@ const useStyles = createUseStyles({
             alignSelf: "stretch",
             boxSizing: "border-box",
             top: "-400%",
-            backgroundColor: "#0D4D7B",
         },
         responsiveHeaderContainer: {
             display: "flex",
