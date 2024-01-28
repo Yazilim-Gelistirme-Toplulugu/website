@@ -14,10 +14,6 @@ const useStyles = createUseStyles({
         backgroundRepeat: "no-repeat",
         height: "250px",
         width: "250px",
-        '@media (max-width: 600px)': {
-            height: "300px",
-            width: "300px",
-        },
     },
     content: {
         opacity: 0,

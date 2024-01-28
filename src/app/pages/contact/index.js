@@ -30,6 +30,7 @@ const Contact = () => {
             style={{
                 backgroundImage: `url(${contactBackground})`,
                 backgroundSize: "cover",
+                backgroundPosition: "center",
                 width: '100%',
                 height: '100vh',
             }}
@@ -55,7 +56,7 @@ const Contact = () => {
                         style={{
                             borderRadius: "32px",
                             alignSelf: "stretch",
-                            backgroundColor: colors.inputAreaColor,
+                            backgroundColor: colors.inputAreaColor,  //rengi almıyor
                         }}
                     />
                     <TextInput

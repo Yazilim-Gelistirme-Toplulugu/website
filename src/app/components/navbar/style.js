@@ -57,7 +57,7 @@ const useStyles = createUseStyles({
         display: "none",
         flexDirection: "row",
         alignItems: "center",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
     },
     "@media only screen and (max-width: 1000px)": {
         leftComponent: {
@@ -74,7 +74,8 @@ const useStyles = createUseStyles({
             left: 0,
             alignSelf: "stretch",
             boxSizing: "border-box",
-            top: "-400%"
+            top: "-400%",
+            backgroundColor: "#0D4D7B",
         },
         responsiveHeaderContainer: {
             display: "flex",

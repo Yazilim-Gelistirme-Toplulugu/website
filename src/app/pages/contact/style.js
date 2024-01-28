@@ -6,6 +6,9 @@ const useStyles = createUseStyles({
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        '@media (max-width:600px)': {
+            width: "50%",
+        }
     },
     mainContent: {
         margin: "250px 0 150px 0",
@@ -20,13 +23,18 @@ const useStyles = createUseStyles({
         border: "3px solid #0B3F65",
         background: "rgba(11, 63, 101, 0.20)",
         backdropFilter: "blur(10px)",
+        '@media (max-width:600px)': {
+            width: "80%",
+            padding: "60px 20px",
+            margin: "0",
+        }
     },
     inputArea: {
         display: "flex",
         flexDirection: "column",
         alignItems: "flex-start",
         gap: "8px",
-        width: "100%"
+        width: "100%",
     }
 })
 export default useStyles;
