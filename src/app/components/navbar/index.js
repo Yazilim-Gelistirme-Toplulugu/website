@@ -14,6 +14,7 @@ const Navbar = () => {
     const navigate = useNavigate();
 
     const rightComponentRef = useRef();
+    let miniScreen = window.innerWidth <= 1000;
 
     const [navbarButtons, setNavbarButtons] = useState([
         {
@@ -97,7 +98,7 @@ const Navbar = () => {
             style={{
                 gap: spaces.item,
                 padding: spaces.container,
-                backgroundColor: colors.inputAreaColor
+                backgroundColor: miniScreen ? colors.inputAreaColor : 0
             }}
         >
             {renderResponsiveHeader()}

@@ -10137,17 +10137,10 @@ natural-compare@^1.4.0:
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
-<<<<<<< HEAD
-ncore-web@^1.0.5-pre-alpha.13:
-  version "1.0.5-pre-alpha.13"
-  resolved "https://registry.yarnpkg.com/ncore-web/-/ncore-web-1.0.5-pre-alpha.13.tgz#b92ed7bed2e64fb840a59082095fa35a7943c29e"
-  integrity sha512-w/aUMjflCltQqj8aITVkOSd1j86V80xD1zSlLUs7kARG3r52ho8B765A/EInj5RA4cPftRPGM/z3LPjkSNi4zQ==
-=======
 ncore-web@1.0.5-pre-alpha.12:
   version "1.0.5-pre-alpha.12"
   resolved "https://registry.yarnpkg.com/ncore-web/-/ncore-web-1.0.5-pre-alpha.12.tgz#9040456ed76be7c7b64fa410c5ea734ea9d79891"
   integrity sha512-GRffc5oTd5bC8S9uM1L71ut+k2/zRODIh0ETmOsp1Z7HqnNli8zw7mpo+p1vlyyTI2sp0j4/OPNDNtm8QwYeuQ==
->>>>>>> ec9b765bc4250ac1e6eb5af69772ae1b95c4e040
   dependencies:
     "@storybook/addon-docs" "^6.5.9"
     react-jss "^10.9.0"
