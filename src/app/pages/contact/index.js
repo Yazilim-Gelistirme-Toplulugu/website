@@ -4,6 +4,7 @@ import useStyles from './style';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import contactBackground from '../../../assets/image/contact/contactBackground.png'
+import axios from 'axios';
 
 const Contact = () => {
 
@@ -18,6 +19,32 @@ const Contact = () => {
         isVisible: false,
         title: null
     });
+    const [name, setName] = useState({})
+    const [email, setEmail] = useState({})
+    const [message, setMessage] = useState({})
+
+    const handleSubmit = async () => {
+        let variables = {
+            name: name,
+            email: email,
+            message: message,
+        }
+        try {
+            console.log(variables);
+            await axios.post('http://localhost:5000/contact', variables);
+            console.log('İletişim formu başarıyla gönderildi.');
+            setIsVisibleDialog({
+                isVisible: true,
+                title: "Mesajınız gönderildi."
+            })
+        } catch (error) {
+            console.error('İletişim formu gönderme hatası:', error);
+            setIsVisibleDialog({
+                isVisible: true,
+                title: "Mesajınız Gönderilemedi:( E-mail adresininizi ve mesajınızı girdiğinizden emin olun."
+            })
+        }
+    };
 
     return <div
         style={{
@@ -51,12 +78,15 @@ const Contact = () => {
                     <TextInput
                         title='İsim Soyisim'
                         placeholder='İsim Soyisim'
-                        isRequired 
+                        isRequired
                         spreadBehaviour='free'
                         style={{
                             borderRadius: "32px",
                             alignSelf: "stretch",
                             backgroundColor: colors.inputAreaColor,  //rengi almıyor
+                        }}
+                        onChangeText={(value) => {
+                            setName(value);
                         }}
                     />
                     <TextInput
@@ -68,6 +98,9 @@ const Contact = () => {
                             borderRadius: "32px",
                             alignSelf: "stretch",
                             backgroundColor: colors.inputAreaColor,
+                        }}
+                        onChangeText={(value) => {
+                            setEmail(value);
                         }}
                     />
                     <TextInput
@@ -81,25 +114,16 @@ const Contact = () => {
                             backgroundColor: colors.inputAreaColor,
                             alignSelf: "stretch"
                         }}
+                        onChangeText={(value) => {
+                            setMessage(value);
+                        }}
                     />
                 </div>
                 <Button
                     textColor='body'
                     title="Gönder"
                     spreadBehaviour='free'
-                    onClick={() => {
-                        if (true) { //gönderim durumları yazılacak
-                            setIsVisibleDialog({
-                                isVisible: true,
-                                title: "Mesajınız gönderildi."
-                            })
-                        } else {
-                            setIsVisibleDialog({
-                                isVisible: true,
-                                title: "Mesajınız Gönderilemedi:( /nE-mail adresininizi ve mesajınızı girdiğinizden emin olun."
-                            })
-                        }
-                    }}
+                    onClick={handleSubmit}
                 />
             </div>
 
