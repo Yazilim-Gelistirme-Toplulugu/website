@@ -1,4 +1,4 @@
-import { Button, Container, Text, useNCoreTheme, TextInput, Dialog } from 'ncore-web';
+import { Button, Text, useNCoreTheme, TextInput, Dialog } from 'ncore-web';
 import React, { useState } from 'react'
 import useStyles from './style';
 import Navbar from '../../components/navbar';
@@ -11,7 +11,6 @@ const Contact = () => {
     const classes = useStyles();
 
     const {
-        spaces,
         colors
     } = useNCoreTheme();
 
@@ -36,13 +35,13 @@ const Contact = () => {
             setIsVisibleDialog({
                 isVisible: true,
                 title: "Mesajınız gönderildi."
-            })
+            });
         } catch (error) {
             console.error('İletişim formu gönderme hatası:', error);
             setIsVisibleDialog({
                 isVisible: true,
                 title: "Mesajınız Gönderilemedi:( E-mail adresininizi ve mesajınızı girdiğinizden emin olun."
-            })
+            });
         }
     };
 
@@ -129,7 +128,7 @@ const Contact = () => {
 
         </div>
         <Footer />
-        <Dialog
+        <Dialog //Bu kısmı almıyor
             isVisible={isVisibleDialog.isVisible}
             variant='info'
             onOverlayPress={() => {

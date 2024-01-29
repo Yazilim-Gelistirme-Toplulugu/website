@@ -148,7 +148,7 @@ const Footer = () => {
                     }}
                 >
                     <Link
-                        to="https://www.instagram.com/ktun.yazilimgelistirme/?hl=tr"
+                        to="https://www.instagram.com/ktunygt/"
                         target="_blank"
                     >
                         <InstagramIcon
@@ -158,7 +158,7 @@ const Footer = () => {
                         />
                     </Link>
                     <Link
-                        to="https://twitter.com/KTUNYazilimGT"
+                        to="https://twitter.com/ktunygt"
                         target="_blank"
                     >
                         <XIcon
@@ -168,7 +168,7 @@ const Footer = () => {
                         />
                     </Link>
                     <Link
-                        to="https://www.linkedin.com/company/ktun-yazilimgelistirme/mycompany/"
+                        to="https://www.linkedin.com/company/ktunygt/mycompany/"
                         target="_blank"
                     >
                         <LinkedInIcon
