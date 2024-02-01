@@ -17,7 +17,7 @@ const useStyles = createUseStyles({
         padding: "40px 56px",
         flexDirection: "column",
         justifyContent: "center",
-        alignItems: "center", //center olmasına ragmen gönder butonu ortada değil
+        alignItems: "center",
         gap: "32px",
         borderRadius: "32px",
         border: "3px solid #0B3F65",

@@ -128,7 +128,7 @@ const Contact = () => {
 
         </div>
         <Footer />
-        <Dialog //Bu kısmı almıyor
+        <Dialog //Bu kısmı almıyor alıyor da mail gönderilince yani 3 dk sonra
             isVisible={isVisibleDialog.isVisible}
             variant='info'
             onOverlayPress={() => {

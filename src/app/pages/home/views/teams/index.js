@@ -143,10 +143,10 @@ const TeamsSection = () => {
             photo: nisaPeri,
         },
         {
-            id: 16,
-            fullName: "Sevinç Tanış",
+            id: 26,
+            fullName: "Büşra Kaya",
             duty: "Sosyal Medya Ekip Üyesi",
-            photo: sevinc,
+            photo: busra,
         },
         /*  {
               id: 17,
@@ -154,12 +154,7 @@ const TeamsSection = () => {
               duty: "Sosyal Medya Ekip Üyesi",
               photo: saziye,
           },*/
-        {
-            id: 18,
-            fullName: "Dilay Uluergüven",
-            duty: "Tasarım Ekip Üyesi",
-            photo: dilay,
-        },
+
         {
             id: 19,
             fullName: "Özkan Sarı",
@@ -177,12 +172,6 @@ const TeamsSection = () => {
             fullName: "İlayda Cirit",
             duty: "Etkinlik-Organizasyon Ekip Üyesi",
             photo: ilayda,
-        },
-        {
-            id: 22,
-            fullName: "Ali Haydar Şeflek",
-            duty: "Etkinlik-Organizasyon Ekip Üyesi",
-            photo: alihaydar,
         },
         /* {
              id: 23,
@@ -203,10 +192,10 @@ const TeamsSection = () => {
             photo: irem,
         },
         {
-            id: 26,
-            fullName: "Büşra Kaya",
+            id: 16,
+            fullName: "Sevinç Tanış",
             duty: "Topluluk Üyesi",
-            photo: busra,
+            photo: sevinc,
         },
         {
             id: 27,
@@ -219,12 +208,23 @@ const TeamsSection = () => {
             fullName: "İlknur Demiral",
             duty: "Topluluk Üyesi",
             photo: ilknur,
+        }, {
+            id: 18,
+            fullName: "Dilay Uluergüven",
+            duty: "Topluluk Üyesi",
+            photo: dilay,
         },
         {
             id: 29,
             fullName: "Taha Atakan Ceylan",
             duty: "Topluluk Üyesi",
             photo: atakan,
+        },
+        {
+            id: 22,
+            fullName: "Ali Haydar Şeflek",
+            duty: "Topluluk Üyesi",
+            photo: alihaydar,
         },
         {
             id: 30,
