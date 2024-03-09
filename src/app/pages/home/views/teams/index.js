@@ -126,24 +126,12 @@ const TeamsSection = () => {
         },
         {
             id: 13,
-            fullName: "Sami Aksoy",
-            duty: "Yönetim Kurulu Üyesi",
-            photo: sami,
-        },
-        {
-            id: 14,
-            fullName: "Keziban Karaoğlu",
-            duty: "Yönetim Kurulu Üyesi",
-            photo: keziban,
-        },
-        {
-            id: 15,
             fullName: "Nisa Peri Aksoy",
             duty: "Yönetim Kurulu Üyesi",
             photo: nisaPeri,
         },
         {
-            id: 26,
+            id: 14,
             fullName: "Büşra Kaya",
             duty: "Sosyal Medya Ekip Üyesi",
             photo: busra,
@@ -156,7 +144,7 @@ const TeamsSection = () => {
           },*/
 
         {
-            id: 19,
+            id: 15,
             fullName: "Özkan Sarı",
             duty: "Video-Edit Ekip Üyesi",
             photo: ozkan,
@@ -168,90 +156,37 @@ const TeamsSection = () => {
               photo: saziye,
           },*/
         {
-            id: 21,
-            fullName: "İlayda Cirit",
-            duty: "Etkinlik-Organizasyon Ekip Üyesi",
-            photo: ilayda,
-        },
-        /* {
-             id: 23,
-             fullName: "Emir Arslan",
-             duty: "Etkinlik-Organizasyon Ekip Üyesi",
-             photo: saziye,
-         },*/
-        /*  {
-              id: 24,
-              fullName: "Furkan Kılıç",
-              duty: "Etkinlik-Organizasyon Ekip Üyesi",
-              photo: saziye,
-          },*/
-        {
-            id: 25,
+            id: 16,
             fullName: "İrem Demir",
             duty: "Topluluk Üyesi",
             photo: irem,
         },
         {
-            id: 16,
+            id: 17,
             fullName: "Sevinç Tanış",
             duty: "Topluluk Üyesi",
             photo: sevinc,
         },
         {
-            id: 27,
+            id: 18,
             fullName: "Sezai Öztürk",
             duty: "Topluluk Üyesi",
             photo: sezai,
         },
         {
-            id: 28,
+            id: 19,
             fullName: "İlknur Demiral",
             duty: "Topluluk Üyesi",
             photo: ilknur,
-        }, {
-            id: 18,
-            fullName: "Dilay Uluergüven",
-            duty: "Topluluk Üyesi",
-            photo: dilay,
         },
         {
-            id: 29,
-            fullName: "Taha Atakan Ceylan",
-            duty: "Topluluk Üyesi",
-            photo: atakan,
-        },
-        {
-            id: 22,
+            id: 20,
             fullName: "Ali Haydar Şeflek",
             duty: "Topluluk Üyesi",
             photo: alihaydar,
         },
         {
-            id: 30,
-            fullName: "Mecit Mert Bişgin",
-            duty: "Topluluk Üyesi",
-            photo: mecit,
-        },
-        {
-            id: 31,
-            fullName: "Muhammet Selim Yaman",
-            duty: "Topluluk Üyesi",
-            photo: selim,
-        },
-        {
-            id: 32,
-            fullName: "Cennet Bayar",
-            duty: "Topluluk Üyesi",
-            photo: cennet,
-        },
-        {
-            id: 33,
-            fullName: "Hafsa İrem Çelik",
-            duty: "Topluluk Üyesi",
-            photo: hafsa,
-        },
-        {
-            id: 34,
+            id: 21,
             fullName: "Burak Aslan",
             duty: "Topluluk Üyesi",
             photo: burak,
