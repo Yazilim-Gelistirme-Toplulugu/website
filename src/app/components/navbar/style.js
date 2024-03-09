@@ -9,7 +9,6 @@ const useStyles = createUseStyles({
         top: 0,
         display: "flex",
         flexDirection: "row",
-        padding: "24px 56px",
         position: "fixed",
         justifyContent: "space-between",
         alignItems: "center",

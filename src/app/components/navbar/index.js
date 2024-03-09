@@ -1,48 +1,60 @@
-import React, { useRef, useState } from 'react';
-import { Button, useNCoreTheme } from 'ncore-web';
-import logo from "../../../../src/assets/image/components/logo.png"
+import React, {
+    useRef,
+    useState
+} from 'react';
+import {
+    Button,
+    useNCoreTheme
+} from 'ncore-web';
 import useStyles from './style';
-import { useNavigate } from 'react-router-dom';
-import { Link } from "react-router-dom";
-import CloseIcon from '../../../assets/svgr/close';
+import logo from "../../../../src/assets/image/components/logo.png"
 import DropdownMenuBarIcon from '../../../assets/svgr/dropdownMenuBar';
-import { UYE_ALIM_LINK } from '../../constants';
+import CloseIcon from '../../../assets/svgr/close';
+import {
+    useNavigate,
+    Link
+} from 'react-router-dom';
+import {
+    UYE_ALIM_LINK
+} from '../../constants';
+
+const NAVBAR_BUTTONS = [
+    {
+        title: "Anasayfa",
+        href: "#",
+        isActive: false,
+        navigateSection: "#main"
+    },
+    {
+        title: "Hakkımızda",
+        href: "#",
+        isActive: false,
+        navigateSection: "#aboutUs"
+    },
+    {
+        title: "Ekibimiz",
+        href: "#",
+        isActive: false,
+        navigateSection: "#teams"
+    },
+    /* {
+        title: "Galeri",
+        href: "#",
+        isActive: false,
+        navigateSection: "#gallery"
+    }, */
+
+]
 
 const Navbar = () => {
     const { spaces, colors } = useNCoreTheme();
-    const classes = useStyles();
-    const navigate = useNavigate();
-
     const rightComponentRef = useRef();
+    const navigate = useNavigate();
+    const classes = useStyles();
+
     let miniScreen = window.innerWidth <= 1000;
 
-    const [navbarButtons, setNavbarButtons] = useState([
-        {
-            title: "Anasayfa",
-            href: "#",
-            isActive: false,
-            navigateSection: "#main"
-        },
-        {
-            title: "Hakkımızda",
-            href: "#",
-            isActive: false,
-            navigateSection: "#aboutUs"
-        },
-        {
-            title: "Ekibimiz",
-            href: "#",
-            isActive: false,
-            navigateSection: "#teams"
-        },
-        /* {
-            title: "Galeri",
-            href: "#",
-            isActive: false,
-            navigateSection: "#gallery"
-        }, */
-
-    ])
+    const [navbarButtons, setNavbarButtons] = useState(NAVBAR_BUTTONS)
 
     const renderResponsiveHeader = () => {
         return <div
@@ -70,6 +82,9 @@ const Navbar = () => {
 
     return <div
         className={classes.navbar}
+        style={{
+            padding: miniScreen ? `${spaces.content * 3}px ${spaces.content * 2}px` :`${spaces.content * 3}px ${spaces.content * 6}px`
+        }}
     >
         <div
             className={classes.leftComponent}

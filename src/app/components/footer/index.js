@@ -10,37 +10,39 @@ import XIcon from '../../../assets/svgr/x/index.js';
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 
+const FOOTER_BUTTONS = [
+    {
+        title: "Anasayfa",
+        href: "#",
+        isActive: false,
+        navigateSection: "#main"
+    },
+    {
+        title: "Hakkımızda",
+        href: "#",
+        isActive: false,
+        navigateSection: "#aboutUs"
+    },
+    {
+        title: "Ekibimiz",
+        href: "#",
+        isActive: false,
+        navigateSection: "#teams"
+    },
+    {
+        title: "Galeri",
+        href: "#",
+        isActive: false,
+        navigateSection: "/home#gallery"
+    },
+
+]
+
 const Footer = () => {
     const { spaces, colors } = useNCoreTheme();
     const classes = useStyles();
     const navigate = useNavigate();
-    const [footerButtons, setFooterButtons] = useState([
-        {
-            title: "Anasayfa",
-            href: "#",
-            isActive: false,
-            navigateSection: "#main"
-        },
-        {
-            title: "Hakkımızda",
-            href: "#",
-            isActive: false,
-            navigateSection: "#aboutUs"
-        },
-        {
-            title: "Ekibimiz",
-            href: "#",
-            isActive: false,
-            navigateSection: "#teams"
-        },
-        {
-            title: "Galeri",
-            href: "#",
-            isActive: false,
-            navigateSection: "/home#gallery"
-        },
-
-    ])
+    const [footerButtons, setFooterButtons] = useState(FOOTER_BUTTONS)
 
     return <div
         className={classes.container}
@@ -197,7 +199,7 @@ const Footer = () => {
                 textAlign:"center"
             }}
         >
-            Telif Hakkı © 2023 Yazılım Geliştirme Topluluğu - Tüm Hakları Saklıdır.
+            Telif Hakkı © {new Date().getFullYear()} Yazılım Geliştirme Topluluğu - Tüm Hakları Saklıdır.
         </Text>
     </div>
 }

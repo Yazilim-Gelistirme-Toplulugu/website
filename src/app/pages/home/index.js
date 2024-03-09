@@ -1,23 +1,14 @@
-import { Button, Container, Text, useNCoreTheme } from 'ncore-web';
-import React, { useEffect } from 'react'
-import useStyles from './style';
-import MainSection from './views/main';
-import Navbar from '../../components/navbar';
-import AboutUsSection from './views/aboutUs';
-import TeamsSection from './views/teams';
+import React from 'react'
 import KeywordsSection from './views/keywords';
 import SponsorsSection from './views/sponsors';
+import AboutUsSection from './views/aboutUs';
 import GallerySection from './views/gallery';
+import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
+import TeamsSection from './views/teams';
+import MainSection from './views/main';
 
 const Home = () => {
-
-  const classes = useStyles();
-
-  const {
-    spaces,
-    colors
-  } = useNCoreTheme();
 
   return <div
     style={{
